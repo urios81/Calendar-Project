@@ -1,4 +1,4 @@
-# Dynamic Calendar with Event Management
+# Dynamic Calendar with Connected Events
 
 This project is a dynamic, responsive calendar application designed to manage and visualize events. It supports recurring events, allows filtering of events based on multiple criteria, and provides a detailed view of events with additional information. The calendar is fully functional and can be viewed on GitHub Pages.
 
