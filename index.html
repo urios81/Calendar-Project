@@ -1,0 +1,72 @@
+<div class="container-fluid" id="${topID}">
+    <#-- Button that links to the new submission page for the form -->
+    <div id="${topID}_NewEventBtn_Container">
+        <a id="${topID}_NewEventBtn_Link" href="https://pixtoday.net/form/298/new-submission" target="_blank" style="text-decoration: none!important">
+            + New Event
+        </a>
+    </div>
+    
+    <#-- Search bar that will filter the calendar events data -->
+    <input class="form-control" id="${topID}_SearchBar" type="text" placeholder="Filter calendar events based on Event Name, Event Type and Additional Information...">
+    
+    <#-- Container that holds the calendar -->
+    <div id="${topID}_CalendarCenterContent">
+    
+        <div id="${topID}_CalendarContainer">
+            
+            <#-- Month & Year Header -->
+            <div id="${topID}_Header">
+                <div style="width: 100px;"></div>
+                <button id="${topID}_PrevMonthBtn" style="margin-top: auto; margin-bottom: auto;"> Previous Month </button>
+                <div id="${topID}_MonthDisplay" navVal="0" style="margin-top: auto; margin-bottom: auto;">  </div>
+                <button id="${topID}_NextMonthBtn" style="margin-top: auto; margin-bottom: auto;"> Next Month </button>
+                <img src="https://www-api.pixtoday.net/form/file/72ab1f5c-306c-496a-a0d0-7d76d6e393e7" alt="Logo" width="100" height="60">
+            </div>
+            
+            <#-- Legend for the colors of each event type -->
+            <div id="${topID}_Info" style="">
+                <div style="display: flex;">
+                    <div class="colorBox eventType_Conference">
+                    </div>
+                    Conferences
+                </div>
+                <div style="display: flex;">
+                    <div class="colorBox eventType_Workshop">
+                    </div>
+                    Workshops
+                </div>
+                <div style="display: flex;">
+                    <div class="colorBox eventType_Networking">
+                    </div>
+                    Networking Events
+                </div>
+                <div style="display: flex;">
+                    <div class="colorBox eventType_Other">
+                    </div>
+                    Other Event Type
+                </div>
+                <div style="display: flex;">
+                    <div class="colorBox eventType_">
+                    </div>
+                    No Event Type
+                </div>
+            </div>
+            
+            <#-- Days of the week headers -->
+            <div id="${topID}_Weekdays">
+                <div>Sunday</div>
+                <div>Monday</div>
+                <div>Tuesday</div>
+                <div>Wednesday</div>
+                <div>Thursday</div>
+                <div>Friday</div>
+                <div>Saturday</div>
+            </div>
+            
+            <#-- When the actual days of the month boxes will be inserted -->
+            <div id="${topID}_CalendarDisplay">
+            </div>
+        
+        </div>
+    </div>
+</div>
