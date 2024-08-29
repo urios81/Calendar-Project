@@ -680,13 +680,11 @@
                             dayOfMonth+
                             todaysData.map((submission, index) => {
                                 
-                                const keyList = submission.answers.map(o => o.questionKey);
-                                
                                 // For each event in this day's box, grab the event name from the submission
-                                const eventName = submission.answers.filter(o => o.questionKey === "eventName")[0].value;
+                                const eventName = submission.eventName;
                                 
                                 // Grab the start date & time (with some formatting options)
-                                const startDateTime = new Date(submission.answers.filter(o => o.questionKey === "startDateTime")[0].value);
+                                const startDateTime = new Date(submission.startDateTime);
                                 const startDate = startDateTime.toLocaleDateString('en-us', {
                                     weekday: 'long',
                                     year: 'numeric',
@@ -698,7 +696,7 @@
                                     minute: "2-digit",
                                 });
                                 // Grab the end date & time (with some formatting options)
-                                const endDateTime = new Date(submission.answers.filter(o => o.questionKey === "endDateTime")[0].value);
+                                const endDateTime = new Date(submission.endDateTime);
                                 const addEndDate = new Date(endDateTime).setHours(0, 0, 0, 0);
                                 const endDate = endDateTime.toLocaleDateString('en-us', {
                                     weekday: 'long',
@@ -723,16 +721,8 @@
                                             month: "2-digit",
                                             day: "2-digit"
                                         });
-                                
-                                let todaysEvents = [];
-                                
-                                todaysData.forEach(submission => {
-                                    submission.answers.forEach(answer => {
-                                        if (answer.questionKey === "eventName") {
-                                            todaysEvents.push(answer.value);
-                                        }
-                                    });
-                                });
+                                        
+                                let todaysEvents = todaysData.map(submission => submission.eventName);
                                 
                                 if (index === 0) {
                                     yesterdaysEvents = (weekDayIndex === 0) ? [] : yesterdaysEvents;
@@ -761,69 +751,48 @@
                                         delete eventsAddedForWeek[eventName];
                                     }
                                     
-                                    let tempDiv = "";
+                                    let tempDiv = ""
                                     while(eventPositions[weekDayIndex].includes(tempCount)) {
                                         tempDiv += "<div class='dayEvent eventType_' style='width: 100%; visibility: hidden;'></div>";
                                         tempCount += 1;
                                     }
-                                    
+
+                                    if (index === todaysData.length - 1) {
+                                        tempDiv = "</div></div></div></div>";
+                                    }
+
                                     return tempDiv;
                                 }
                                 
                                 // Grab the event type, if that question was answered
-                                let eventType = "";
-                                if (keyList.includes("eventType")) {
-                                    eventType = submission.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] || "";
-                                }
+                                let eventType = submission.eventType;
                                 
                                 // Grab the additional information, if that question was answered
-                                let additionalInfo = "";
-                                if (keyList.includes("additionalInformation")) {
-                                    additionalInfo = submission.answers.filter(o => o.questionKey === "additionalInformation")[0].value || "";
-                                }
+                                let additionalInfo = submission.additionalInformation;
                                 
                                 // Grab the recurring time frame, if that question was answered
-                                let recurTimeFrame = "";
-                                if (keyList.includes("timeFrame")) {
-                                    if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "DailyWeekday") {
-                                        recurTimeFrame = "Daily - Weekdays Only";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "DailyEveryday") {
-                                        recurTimeFrame = "Daily";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Weekly") {
-                                        recurTimeFrame = "Weekly";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "BiWeekly") {
-                                        recurTimeFrame = "Bi-Weekly";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Monthly") {
-                                        recurTimeFrame = "Monthly";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "BiMonthly") {
-                                        recurTimeFrame = "Bi-Monthly";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Quarterly") {
-                                        recurTimeFrame = "Quarterly";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "SemiAnnually") {
-                                        recurTimeFrame = "Semi-Annually";
-                                    } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Annually") {
-                                        recurTimeFrame = "Annually";
-                                    }
-                                }
+                                let recurTimeFrame = submission.timeFrame;
                                 
                                 // Grab the end recurring date, if that question was answered
                                 let recurEndDate = "";
-                                if (keyList.includes("endRecurring") && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != undefined && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != "") {
-                                    recurEndDate = new Date(submission.answers.filter(o => o.questionKey === "endRecurring")[0].value).setHours(0, 0, 0, 0) + 86400000;
+
+                                if (submission.endRecurring != "") {
+                                    recurEndDate = new Date(submission.endRecurring).setHours(0, 0, 0, 0) + 86400000;
                                     recurEndDate = new Date(recurEndDate).toLocaleDateString('en-us', {
                                         weekday: 'long',
                                         year: 'numeric',
                                         month: 'short',
                                         day: 'numeric',
                                     });
-                                    
                                 }
                                 
-                                // Create the event name displayed on the icon in the calendar
+                                // Create the event text that will display on the calendar
                                 let eventIconName = "";
+                                // If this box's day is the same date as the start event date, include the start time
                                 if (startDateTime.getDate() === nextDay.getDate()) {
                                     eventIconName = startTime+" "+eventName;
                                 } else {
+                                    // If not, only display the event name
                                     eventIconName = eventName;
                                 }
                                 
@@ -877,7 +846,9 @@
                                                     "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                                     "<br><b>End of Event Recurring: </b>"+recurEndDate+
                                                     "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"+
-                                                    "<p style='text-align: right;'><button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button></p>"+
+                                                    "<p style='text-align: right;'>" +
+                                                        "<button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button>" + 
+                                                    "</p>"+
                                                 "</div>"+
                                             "</div>"+
                                         "</div>"+

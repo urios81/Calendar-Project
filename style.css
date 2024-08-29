@@ -162,6 +162,18 @@
     color: #fff;
 }
 
+/* If the event type response was Other */
+#Calendar .eventType_Review {
+    background-color: #8F25BF;
+    color: #fff;
+}
+
+/* If the event type response was Other */
+#Calendar .eventType_Presentation {
+    background-color: #8F25BF;
+    color: #fff;
+}
+
 /* Banner across top that holds the legend for the color coded events */
 #Calendar #Calendar_Info {
     height: 25px;
