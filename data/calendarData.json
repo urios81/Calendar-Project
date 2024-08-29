@@ -799,5 +799,401 @@
         "additionalInformation": "Details about Onboarding Session on September 10",
         "timeFrame": "",
         "endRecurring": ""
+    },
+    {
+        "eventName": "Design Workshop from October 02 to October 03",
+        "startDateTime": "2024-10-02T09:00:00Z",
+        "endDateTime": "2024-10-03T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop spanning 2 days.",
+        "timeFrame": "Weekly",
+        "endRecurring": "2025-10-03"
+    },
+    {
+        "eventName": "Out Sick on October 02",
+        "startDateTime": "2024-10-02T10:00:00Z",
+        "endDateTime": "2024-10-02T11:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Out Sick on October 02",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Design Workshop from October 04 to October 05",
+        "startDateTime": "2024-10-04T09:00:00Z",
+        "endDateTime": "2024-10-05T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop spanning 2 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Design Workshop on October 04",
+        "startDateTime": "2024-10-04T10:00:00Z",
+        "endDateTime": "2024-10-04T11:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about Design Workshop on October 04",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Product Demo from October 06 to October 06",
+        "startDateTime": "2024-10-06T09:00:00Z",
+        "endDateTime": "2024-10-06T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Product Demo spanning 1 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Performance Review on October 06",
+        "startDateTime": "2024-10-06T10:00:00Z",
+        "endDateTime": "2024-10-06T11:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Performance Review on October 06",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "HR Training from October 07 to October 07",
+        "startDateTime": "2024-10-07T09:00:00Z",
+        "endDateTime": "2024-10-07T17:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about HR Training spanning 1 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Standup from October 08 to October 10",
+        "startDateTime": "2024-10-08T09:00:00Z",
+        "endDateTime": "2024-10-10T17:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Standup spanning 3 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Product Demo on October 08",
+        "startDateTime": "2024-10-08T10:00:00Z",
+        "endDateTime": "2024-10-08T11:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about Product Demo on October 08",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Code Review from October 08 to October 09",
+        "startDateTime": "2024-10-08T09:00:00Z",
+        "endDateTime": "2024-10-09T17:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about Code Review spanning 2 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Team Lunch from October 09 to October 13",
+        "startDateTime": "2024-10-09T09:00:00Z",
+        "endDateTime": "2024-10-13T17:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Team Lunch spanning 5 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Design Workshop on October 09",
+        "startDateTime": "2024-10-09T10:00:00Z",
+        "endDateTime": "2024-10-09T11:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Design Workshop on October 09",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Morning Meeting from October 09 to October 12",
+        "startDateTime": "2024-10-09T09:00:00Z",
+        "endDateTime": "2024-10-12T17:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about Morning Meeting spanning 4 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Product Demo from October 10 to October 10",
+        "startDateTime": "2024-10-10T09:00:00Z",
+        "endDateTime": "2024-10-10T17:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Product Demo spanning 1 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Quarterly Planning from October 11 to October 13",
+        "startDateTime": "2024-10-11T09:00:00Z",
+        "endDateTime": "2024-10-13T17:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Quarterly Planning spanning 3 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Out Sick on October 11",
+        "startDateTime": "2024-10-11T10:00:00Z",
+        "endDateTime": "2024-10-11T11:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Out Sick on October 11",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Team Lunch on October 12",
+        "startDateTime": "2024-10-12T09:00:00Z",
+        "endDateTime": "2024-10-12T10:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Team Lunch on October 12",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Design Workshop from October 16 to October 20",
+        "startDateTime": "2024-10-16T09:00:00Z",
+        "endDateTime": "2024-10-20T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop spanning 5 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "All-Hands Meeting on October 16",
+        "startDateTime": "2024-10-16T10:00:00Z",
+        "endDateTime": "2024-10-16T11:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about All-Hands Meeting on October 16",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Morning Meeting from October 18 to October 19",
+        "startDateTime": "2024-10-18T09:00:00Z",
+        "endDateTime": "2024-10-19T17:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Morning Meeting spanning 2 days.",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "2025-10-19"
+    },
+    {
+        "eventName": "Team Lunch from October 18 to October 22",
+        "startDateTime": "2024-10-18T09:00:00Z",
+        "endDateTime": "2024-10-22T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Team Lunch spanning 5 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Strategy Session from October 20 to October 22",
+        "startDateTime": "2024-10-20T09:00:00Z",
+        "endDateTime": "2024-10-22T17:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Strategy Session spanning 3 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Performance Review on October 20",
+        "startDateTime": "2024-10-20T10:00:00Z",
+        "endDateTime": "2024-10-20T11:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about Performance Review on October 20",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Morning Meeting on October 20",
+        "startDateTime": "2024-10-20T11:00:00Z",
+        "endDateTime": "2024-10-20T12:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Morning Meeting on October 20",
+        "timeFrame": "Weekly",
+        "endRecurring": "2025-10-20"
+    },
+    {
+        "eventName": "HR Training from October 21 to October 24",
+        "startDateTime": "2024-10-21T09:00:00Z",
+        "endDateTime": "2024-10-24T17:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about HR Training spanning 4 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Year-End Party on October 21",
+        "startDateTime": "2024-10-21T10:00:00Z",
+        "endDateTime": "2024-10-21T11:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Year-End Party on October 21",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "PTO from October 23 to October 24",
+        "startDateTime": "2024-10-23T09:00:00Z",
+        "endDateTime": "2024-10-24T17:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about PTO spanning 2 days.",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Client Call on October 24",
+        "startDateTime": "2024-10-24T09:00:00Z",
+        "endDateTime": "2024-10-24T10:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Client Call on October 24",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "All-Hands Meeting on October 25",
+        "startDateTime": "2024-10-25T09:00:00Z",
+        "endDateTime": "2024-10-25T10:00:00Z",
+        "eventType": "Review",
+        "additionalInformation": "Details about All-Hands Meeting on October 25",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Project Review on October 25",
+        "startDateTime": "2024-10-25T10:00:00Z",
+        "endDateTime": "2024-10-25T11:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Project Review on October 25",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Code Review on October 25",
+        "startDateTime": "2024-10-25T11:00:00Z",
+        "endDateTime": "2024-10-25T12:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review on October 25",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Out Sick on October 21",
+        "startDateTime": "2024-10-21T09:00:00Z",
+        "endDateTime": "2024-10-21T10:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Out Sick on October 21",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Onboarding Session on October 21",
+        "startDateTime": "2024-10-21T10:00:00Z",
+        "endDateTime": "2024-10-21T11:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Onboarding Session on October 21",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Product Demo on October 21",
+        "startDateTime": "2024-10-21T11:00:00Z",
+        "endDateTime": "2024-10-21T12:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Product Demo on October 21",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "2025-10-21"
+    },
+    {
+        "eventName": "Project Review on October 21",
+        "startDateTime": "2024-10-21T12:00:00Z",
+        "endDateTime": "2024-10-21T13:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Project Review on October 21",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Team Lunch on October 15",
+        "startDateTime": "2024-10-15T09:00:00Z",
+        "endDateTime": "2024-10-15T10:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Team Lunch on October 15",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "HR Training on October 15",
+        "startDateTime": "2024-10-15T10:00:00Z",
+        "endDateTime": "2024-10-15T11:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about HR Training on October 15",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Client Presentation on October 15",
+        "startDateTime": "2024-10-15T11:00:00Z",
+        "endDateTime": "2024-10-15T12:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Presentation on October 15",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "2025-10-15"
+    },
+    {
+        "eventName": "Client Call on October 15",
+        "startDateTime": "2024-10-15T12:00:00Z",
+        "endDateTime": "2024-10-15T13:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call on October 15",
+        "timeFrame": "Monthly",
+        "endRecurring": "2025-10-15"
+    },
+    {
+        "eventName": "HR Training on October 15",
+        "startDateTime": "2024-10-15T13:00:00Z",
+        "endDateTime": "2024-10-15T14:00:00Z",
+        "eventType": "Networking",
+        "additionalInformation": "Details about HR Training on October 15",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Budget Review on October 15",
+        "startDateTime": "2024-10-15T14:00:00Z",
+        "endDateTime": "2024-10-15T15:00:00Z",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Budget Review on October 15",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Standup on October 25",
+        "startDateTime": "2024-10-25T09:00:00Z",
+        "endDateTime": "2024-10-25T10:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Standup on October 25",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Client Call on October 25",
+        "startDateTime": "2024-10-25T10:00:00Z",
+        "endDateTime": "2024-10-25T11:00:00Z",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call on October 25",
+        "timeFrame": "",
+        "endRecurring": ""
+    },
+    {
+        "eventName": "Quarterly Planning on October 25",
+        "startDateTime": "2024-10-25T11:00:00Z",
+        "endDateTime": "2024-10-25T12:00:00Z",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Quarterly Planning on October 25",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "2025-10-25"
     }
 ]

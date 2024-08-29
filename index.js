@@ -94,29 +94,29 @@
         
         // Event occurs everyday
         if (timeFrame === "DailyEveryday") {
-            recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+            recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             
         // Event occurs everyday except the weekends (Sunday = day of week 0, Saturday = day of week 6)
         } else if (timeFrame === "DailyWeekday" && (calendarDate.getDay() !== 0 && calendarDate.getDay() !== 6)) {
-            recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+            recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             
         } else if (timeFrame === "Weekly") {
             // Event occurs every week on same day of week (making sure they are 7 days apart)
             if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.round((calendarDate.getTime() - startDateCompare.getTime())/86400000) % 7 === 0) ) {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             }
             
         } else if (timeFrame === "BiWeekly") {
             // Event occurs every other week on same day of week (making sure they are 14 days apart)
             if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.round((calendarDate.getTime() - startDateCompare.getTime())/86400000) % 14 === 0) )  {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             }
         
         } else if (timeFrame === "Monthly") {
             // Event occurs every month on same day of the week & on same number of day of the week in that month (2nd tuesday of every month)
             // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
             if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) ) {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             }
             
         } else if (timeFrame === "BiMonthly") {
@@ -125,11 +125,11 @@
                 // Event occurs every other month on same day of the week & on same number of day of the week in that month (2nd tuesday of every other month)
                 // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 2 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             } else {
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 2 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             }
             
@@ -139,11 +139,11 @@
                 // Event occurs every 3rd month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 3rd month)
                 // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 3 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             } else {
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 3 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             }
             
@@ -153,11 +153,11 @@
                 // Event occurs every 6th month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 6th month)
                 // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 6 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             } else {
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 6 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
+                    recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
                 }
             }
             
@@ -165,7 +165,7 @@
             // Event occurs every 6th month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 6th month) & ff the month index (Jan = 0, Feb = 1, etc.)are the same
             // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
             if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && (startDateCompare.getMonth() === calendarDate.getMonth()) ) {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {"eventName": eventEntry.eventName, "startDateTime": newStartDate, "endDateTime": newEndDate, "eventType": eventType, "additionalInformation": addInfo, "timeFrame": timeFrame, "endRecurring": endRecur, submissionId: eventEntry.submissionId};
             }
         }
         
@@ -394,8 +394,8 @@
             calendarStartDates[startDate] = calendarStartDates[startDate] || [];
             calendarEndDates[endDate] = calendarEndDates[endDate] || [];
             
-            calendarStartDates[startDate].push(eventName);
-            calendarEndDates[endDate].push(eventName);
+            calendarStartDates[startDate].push(eventName+startDate+endDate);
+            calendarEndDates[endDate].push(eventName+startDate+endDate);
         });
         
         let yesterdaysEvents = [];
@@ -511,7 +511,7 @@
                                             day: "2-digit"
                                         });
                                         
-                                let todaysEvents = todaysData.map(submission => submission.eventName);
+                                let todaysEvents = todaysData.map(submission => submission.eventName + submission.startDateTime + submission.endDateTime);
                                 
                                 if (index === 0) {
                                     yesterdaysEvents = (weekDayIndex === 0) ? [] : yesterdaysEvents;
@@ -532,12 +532,12 @@
                                 
                                 yesterdaysEvents = todaysEvents;
                                 
-                                if (!eventsAddedForWeek[eventName]) {
+                                if (!eventsAddedForWeek[eventName + startDateTime + endDateTime]) {
                                     // Mark event as added for this week
-                                    eventsAddedForWeek[eventName] = true;
+                                    eventsAddedForWeek[eventName + startDateTime + endDateTime] = true;
                                 } else {
                                     if (formattedCurrentDate === formattedEndDate) {
-                                        delete eventsAddedForWeek[eventName];
+                                        delete eventsAddedForWeek[eventName + startDateTime + endDateTime];
                                     }
                                     
                                     let tempDiv = ""
@@ -684,7 +684,7 @@
                                             day: "2-digit"
                                         });
                                         
-                                let todaysEvents = todaysData.map(submission => submission.eventName);
+                                let todaysEvents = todaysData.map(submission => submission.eventName + submission.startDateTime + submission.endDateTime);
                                 
                                 if (index === 0) {
                                     yesterdaysEvents = (weekDayIndex === 0) ? [] : yesterdaysEvents;
@@ -705,12 +705,12 @@
                                 
                                 yesterdaysEvents = todaysEvents;
                                 
-                                if (!eventsAddedForWeek[eventName]) {
+                                if (!eventsAddedForWeek[eventName+startDateTime+endDateTime]) {
                                     // Mark event as added for this week
-                                    eventsAddedForWeek[eventName] = true;
+                                    eventsAddedForWeek[eventName+startDateTime+endDateTime] = true;
                                 } else {
                                     if (formattedCurrentDate === formattedEndDate) {
-                                        delete eventsAddedForWeek[eventName];
+                                        delete eventsAddedForWeek[eventName+startDateTime+endDateTime];
                                     }
                                     
                                     let tempDiv = ""
@@ -722,6 +722,7 @@
                                     if (index === todaysData.length - 1) {
                                         tempDiv = "</div></div></div></div>";
                                     }
+                                    console.log("Returned early", eventName)
 
                                     return tempDiv;
                                 }
