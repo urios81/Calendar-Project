@@ -1,6 +1,7 @@
 /* Entire template visualization container */
 #Calendar {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 15px;
     padding: 15px;
@@ -10,7 +11,7 @@
 
 /* Container that justify centers content for calendar */
 #Calendar #Calendar_CalendarCenterContent {
-    width: 100%;
+    width: 90%;
 }
 
 /* Container within visualization that holds all the content */
@@ -211,7 +212,7 @@
 }
 
 #Calendar #Calendar_SearchBar {
-    width: 100%;
+    width: 90%;
     margin-bottom: 15px;
 }
 

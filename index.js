@@ -1,3 +1,4 @@
+// Immediately Invoked Function
 (function() {
     
     const eventHandlers = [];           // Store event handlers so they can be un-wired later.
@@ -65,44 +66,6 @@
                 callback.apply(null, args);
             }, wait);
         };
-    }
-    
-    
-    // ------------------- Start of Non-Boiler Plate JS -------------------
-    
-    // Function to view the submission window after the button has been clicked
-    function viewSubmissionModal() {
-        const btnSubmissionId = Number($(this)[0].id.split("_")[1]);
-        
-        let button = $(this)[0];
-        
-        const modalId = $(this)[0].closest('.modal').id;
-        const modalContainer = $("#Calendar").find("#"+modalId);
-        modalContainer.modal('toggle');
-        
-        function waitForBtn() {
-            button = $(this)[0];
-            // If the button is rendered, open the modal with the submission data
-            if(button != null) {
-                console.log('');
-                var event = new CustomEvent('view_' + formId, { detail: { formId: formId, submissionId: btnSubmissionId } });
-                window.dispatchEvent(event);
-                
-            } 
-            else {
-                window.setTimeout(waitForBtn, 100);
-            }
-        };
-        
-        setTimeout(waitForBtn, 500);
-        
-    }
-    
-    // Function to find the buttons to open submission window
-    function findSubmissionBtns() {
-        const submissionBtns = $("#Calendar").find(".submission-calendar-modal-btn");
-        
-        addEventHandler(submissionBtns, "click", viewSubmissionModal);
     }
     
     // Function to take each event & create a recurring event on the date if parameters are met
@@ -665,7 +628,6 @@
                                                 "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                                 "<br><b>End of Event Recurring: </b>"+recurEndDate+
                                                 "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"+
-                                                "<p style='text-align: right;'><button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button></p>"+
                                             "</div>"+
                                         "</div>"+
                                     "</div>"+
@@ -846,9 +808,6 @@
                                                     "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                                     "<br><b>End of Event Recurring: </b>"+recurEndDate+
                                                     "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"+
-                                                    "<p style='text-align: right;'>" +
-                                                        "<button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button>" + 
-                                                    "</p>"+
                                                 "</div>"+
                                             "</div>"+
                                         "</div>"+
@@ -881,7 +840,6 @@
                                                     "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                                     "<br><b>End of Event Recurring: </b>"+recurEndDate+
                                                     "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"+
-                                                    "<p style='text-align: right;'><button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button></p>"+
                                                     closingDivs;
                                                 
                                 // If the index is for the last event of the day                
@@ -895,7 +853,6 @@
                                         "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                         "<br><b>End of Event Recurring: </b>"+recurEndDate+
                                         "<br><b>Aditional Information: </b><br>"+additionalInfo+
-                                        "<p style='text-align: right;'><button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button></p>"+
                                     "</div>"+
                                     "</div>"+
                                     "</div>"+
@@ -911,8 +868,7 @@
                                         "<br><b>Event Type: </b>"+eventType+
                                         "<br><b>Recurring Timeframe: </b>"+recurTimeFrame+
                                         "<br><b>End of Event Recurring: </b>"+recurEndDate+
-                                        "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"+
-                                        "<p style='text-align: right;'><button id='view_"+submission.submissionId+"_"+nextDay.getTime()+"_button' class='btn btn-sm submission-calendar-modal-btn' style='text-align: left;'>View Full Details</button></p>"
+                                        "<br><b>Aditional Information: </b><br>"+additionalInfo+"</p>"
                                 }
                             }).join('')+
                         "</div>";
@@ -934,8 +890,6 @@
         
         // Display the calendar variable in the calendar element created in the HTML
         document.getElementById('Calendar_CalendarDisplay').innerHTML = calendarDays;
-        
-        findSubmissionBtns();
     }
     
     // Function that fetches the data from the API instead of using the Freemarker list to grab them one by one
