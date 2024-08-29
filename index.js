@@ -426,7 +426,7 @@
         filteredCalendarData.forEach(submission => {
             const startDate = submission.startDateTime;
             const endDate = submission.endDateTime;
-            const eventName = eventName;
+            const eventName = submission.eventName;
             
             calendarStartDates[startDate] = calendarStartDates[startDate] || [];
             calendarEndDates[endDate] = calendarEndDates[endDate] || [];
