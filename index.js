@@ -1,9 +1,13 @@
-<script type="text/javascript" id="${topID}_script">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript" id="Calendar_script">
     (function() {
         
         const eventHandlers = [];           // Store event handlers so they can be un-wired later.
         let unmounting = false;             // Used to cancel the checkElement search if the template is being removed from the DOM.
         
+        const formId = 1;
         let calendarData;
         
         /** Checks if the top-level element exists in the DOM. The DOM will be checked every 100ms.
@@ -16,13 +20,13 @@
               resolve($(element));
             }
             else if (!unmounting) {
-               setTimeout(() => checkElement("${topID}", resolve), 100);
+               setTimeout(() => checkElement("Calendar", resolve), 100);
             }
         }
         
         /** Wrapper function to wait for the top-level element to exist in the DOM. */
         function waitForTopLevelElement() {
-            return new Promise(resolve => checkElement("${topID}", resolve));
+            return new Promise(resolve => checkElement("Calendar", resolve));
         }
         
         /** Should be used to add an event handler so that same handler can be un-wired later. */
@@ -39,7 +43,7 @@
                 const wasScriptRemoved = mutations
                     .filter(o => o.type === "childList")
                     .flatMap(o => Array.from(o.removedNodes))
-                    .some(o => o.nodeName === "SCRIPT" && o.getAttribute("id") === "${topID}_script");
+                    .some(o => o.nodeName === "SCRIPT" && o.getAttribute("id") === "Calendar_script");
                 
                 if (wasScriptRemoved) {
                     eventHandlers.forEach(({ element, event, handler }) => {
@@ -77,7 +81,7 @@
             let button = $(this)[0];
             
             const modalId = $(this)[0].closest('.modal').id;
-            const modalContainer = $("#${topID}").find("#"+modalId);
+            const modalContainer = $("#Calendar").find("#"+modalId);
             modalContainer.modal('toggle');
             
             function waitForBtn() {
@@ -85,7 +89,7 @@
                 // If the button is rendered, open the modal with the submission data
                 if(button != null) {
                     console.log('');
-                    var event = new CustomEvent('view_${form.id}', { detail: { formId: ${form.id}, submissionId: btnSubmissionId } });
+                    var event = new CustomEvent('view_' + formId, { detail: { formId: formId, submissionId: btnSubmissionId } });
                     window.dispatchEvent(event);
                     
                 } 
@@ -100,81 +104,60 @@
         
         // Function to find the buttons to open submission window
         function findSubmissionBtns() {
-            const submissionBtns = $("#${topID}").find(".submission-calendar-modal-btn");
+            const submissionBtns = $("#Calendar").find(".submission-calendar-modal-btn");
             
             addEventHandler(submissionBtns, "click", viewSubmissionModal);
         }
         
         // Function to take each event & create a recurring event on the date if parameters are met
-        function createRecurringEvent(eventEntry, keyList, calendarDate) {
-            // Varaible to retrun, could possibly hold data on recurring event
-            let recurEntry = "";
+        function createRecurringEvent(eventEntry, calendarDate) {
             
             // When needing to compare start date, without time of event, use this variable
-            let startDateCompare = new Date(eventEntry.answers.filter(o => o.questionKey === "startDateTime")[0].value);
+            let startDateCompare = new Date(eventEntry.startDateTime);
             startDateCompare = new Date(startDateCompare).setHours(0, 0, 0, 0);
             startDateCompare = new Date(startDateCompare);
             
             // The new start date of the recurring event (take the original start date & add the difference between calendar date & the start date)
-            let newStartDate = new Date(eventEntry.answers.filter(o => o.questionKey === "startDateTime")[0].value);
+            let newStartDate = new Date(eventEntry.startDateTime);
             newStartDate = new Date(newStartDate.getTime() + (new Date(new Date(calendarDate).setHours(0, 0, 0, 0)).getTime() - startDateCompare) );
             // The new end date of the recurring event (take the original start date & add the difference between the original end date & original start date)
-            let newEndDate = new Date(eventEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value);
-            newEndDate = new Date(newStartDate.getTime() + (newEndDate.getTime() - new Date(eventEntry.answers.filter(o => o.questionKey === "startDateTime")[0].value).getTime()) );
+            let newEndDate = new Date(eventEntry.endDateTime);
+            newEndDate = new Date(newStartDate.getTime() + (newEndDate.getTime() - new Date(eventEntry.startDateTime).getTime()) );
                 
             // Variables for non-required entry data (make sure data exists before assigning it to variable in new object)
-            let eventType = "";
-            let addInfo = "";
-            let timeFrame = "";
-            let endRecur = "";
-            
-            if (keyList.includes("eventType")) {
-                if (eventEntry.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] != "undefined" && eventEntry.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] != undefined && eventEntry.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] != "") {
-                    eventType = eventEntry.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0];
-                }
-            }
-            if (keyList.includes("additionalInformation")) {
-                if (eventEntry.answers.filter(o => o.questionKey === "additionalInformation")[0].value != "undefined" && eventEntry.answers.filter(o => o.questionKey === "additionalInformation")[0].value != undefined && eventEntry.answers.filter(o => o.questionKey === "additionalInformation")[0].value != "") {
-                    addInfo = eventEntry.answers.filter(o => o.questionKey === "additionalInformation")[0].value;
-                }
-            }
-            if (keyList.includes("timeFrame")) {
-                if (eventEntry.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != "undefined" && eventEntry.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != undefined && eventEntry.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != "") {
-                    timeFrame = eventEntry.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0];
-                }
-            }
-            if (keyList.includes("endRecurring")) {
-                if (eventEntry.answers.filter(o => o.questionKey === "endRecurring")[0].value != "undefined" && eventEntry.answers.filter(o => o.questionKey === "endRecurring")[0].value != undefined && eventEntry.answers.filter(o => o.questionKey === "endRecurring")[0].value != "") {
-                    endRecur = eventEntry.answers.filter(o => o.questionKey === "endRecurring")[0].value;
-                }
-            }
-            
+            let eventType = eventEntry.eventType;
+            let addInfo = eventEntry.additionalInformation;
+            let timeFrame = eventEntry.timeFrame;
+            let endRecur = eventEntry.endRecurring;
+
+            // Varaible to retrun, could possibly hold data on recurring event
+            let recurEntry = "";
             
             // Event occurs everyday
             if (timeFrame === "DailyEveryday") {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 
             // Event occurs everyday except the weekends (Sunday = day of week 0, Saturday = day of week 6)
             } else if (timeFrame === "DailyWeekday" && (calendarDate.getDay() !== 0 && calendarDate.getDay() !== 6)) {
-                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 
             } else if (timeFrame === "Weekly") {
                 // Event occurs every week on same day of week (making sure they are 7 days apart)
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.round((calendarDate.getTime() - startDateCompare.getTime())/86400000) % 7 === 0) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 }
                 
             } else if (timeFrame === "BiWeekly") {
                 // Event occurs every other week on same day of week (making sure they are 14 days apart)
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.round((calendarDate.getTime() - startDateCompare.getTime())/86400000) % 14 === 0) )  {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 }
             
             } else if (timeFrame === "Monthly") {
                 // Event occurs every month on same day of the week & on same number of day of the week in that month (2nd tuesday of every month)
                 // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 }
                 
             } else if (timeFrame === "BiMonthly") {
@@ -183,11 +166,11 @@
                     // Event occurs every other month on same day of the week & on same number of day of the week in that month (2nd tuesday of every other month)
                     // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 2 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                     }
                 } else {
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 2 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                     }
                 }
                 
@@ -197,11 +180,11 @@
                     // Event occurs every 3rd month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 3rd month)
                     // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 3 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                     }
                 } else {
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 3 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
                     }
                 }
                 
@@ -211,11 +194,11 @@
                     // Event occurs every 6th month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 6th month)
                     // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((startDateCompare.getMonth() - calendarDate.getMonth()) % 6 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                     }
                 } else {
                     if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && ((calendarDate.getMonth() - startDateCompare.getMonth()) % 6 === 0) ) {
-                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
+                        recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};    
                     }
                 }
                 
@@ -223,7 +206,7 @@
                 // Event occurs every 6th month on same day of the week & on same number of day of the week in that month (2nd tuesday of every 6th month) & ff the month index (Jan = 0, Feb = 1, etc.)are the same
                 // Math takes the date & rounds it down to the floor to get if its the 1st, 2nd, etc Tuesday of that month
                 if ((startDateCompare.getDay() === calendarDate.getDay()) && (Math.floor(calendarDate.getDate()/7) === Math.floor(startDateCompare.getDate()/7)) && (startDateCompare.getMonth() === calendarDate.getMonth()) ) {
-                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.answers.filter(o => o.questionKey === "eventName")[0].value}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
+                    recurEntry = {answers: [{"questionKey": "eventName", "value": eventEntry.eventName}, {"questionKey": "startDateTime", "value": newStartDate}, {"questionKey": "endDateTime", "value": newEndDate}, {"questionKey": "eventType", "value": {"selections": [eventType]} }, {"questionKey": "additionalInformation", "value": addInfo}, {"questionKey": "timeFrame", "value": {"selections": [timeFrame]} }, {"questionKey": "endRecurring", "value": endRecur}], submissionId: eventEntry.submissionId};
                 }
             }
             
@@ -238,7 +221,7 @@
             // Grab the current month to help create events
             let recurDate = new Date();
             recurDate = new Date(recurDate.getFullYear(), recurDate.getMonth(), 1);
-            const monthEl = $("#${topID}_MonthDisplay");
+            const monthEl = $("#Calendar_MonthDisplay");
             const monthVal = Number(monthEl.attr("navVal"));
             if (monthVal != 0) {
                 recurDate.setMonth(new Date().getMonth() + monthVal);
@@ -257,81 +240,47 @@
             for (let i = 1; i <= numMonthDays; i++) {
                 // Created array of data whose events have already passed the end date, are recurring, & is before or on the stop recurring date (if there is one)
                 filteredData.map(function(submission) {
-                    const keyList = submission.answers.map(o => o.questionKey);
+                    const keyList = Object.keys(submission);
                     
                     // If there is a time frame value (indicates recurring events)
                     if (keyList.includes("timeFrame")) {
                         // If the recurring question is not blank
-                        if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != "undefined" && submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != undefined && submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] != "") {
+                        if (submission.timeFrame != "") {
                             // Calculate end of the end date/time of the event
-                            const endVal = submission.answers.filter(o => o.questionKey === "endDateTime")[0].value;
+                            const endVal = submission.endDateTime;
                             const endDate = new Date(endVal).setHours(23, 59, 59, 999);
                             
                             // If there is a date that recurring the event stops
-                            if (keyList.includes("endRecurring")) {
-                                // If the end recurring date value is not blank
-                                if (submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != "undefined" && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != undefined && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != "") {
-                                    // Calculate the end of recurring date to end of the day
-                                    const endRecurVal = submission.answers.filter(o => o.questionKey === "endRecurring")[0].value;
-                                    const endRecurDate = new Date(endRecurVal).setHours(23, 59, 59, 999) + 86400000;
-                                    
-                                    // If the day date is after the event end date & is before or on the end recurring date
-                                    if ((dayOfRecurMonth.getTime() > endDate) && (dayOfRecurMonth.getTime() <= endRecurDate)) {
-                                        // Take the submission event & create a recurring event if its on this date
-                                        const eventRecurObj = createRecurringEvent(submission, keyList, dayOfRecurMonth);
-                                        // If there is a recurring event
-                                        if (eventRecurObj !== "") {
-                                            // Grab the start date of the recurring event
-                                            const eventRecurStartDate = new Date(eventRecurObj.answers.filter(o => o.questionKey === "startDateTime")[0].value).getTime();
-                                            // Filter the submission data for entries that have the same submission ID & the recurring event start date is before the submission end date
-                                            const submisFilteredData = filteredData.filter(subEntry => {
-                                                let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
-                                                if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
-                                                    return subEntry
-                                                }
-                                            });
-                                            // Filter the recurring events data for entries that have the same ID & the new recurring event start date is before the already created recurring end date
-                                            const recurFilteredData = recurringEvents.filter(subEntry => {
-                                                let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
-                                                if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
-                                                    return subEntry
-                                                }
-                                            });
-                                            // If there are no entries in either filtered dataset, add recurring event to list of created recurring events
-                                            if ((submisFilteredData.length === 0) && (recurFilteredData.length === 0)) {
-                                                recurringEvents.push(eventRecurObj);
+                            if (submission.endRecurring && (submission.endRecurring != "")) {
+                                // Calculate the end of recurring date to end of the day
+                                const endRecurVal = submission.endRecurring;
+                                const endRecurDate = new Date(endRecurVal).setHours(23, 59, 59, 999) + 86400000;
+                                
+                                // If the day date is after the event end date & is before or on the end recurring date
+                                if ((dayOfRecurMonth.getTime() > endDate) && (dayOfRecurMonth.getTime() <= endRecurDate)) {
+                                    // Take the submission event & create a recurring event if its on this date
+                                    const eventRecurObj = createRecurringEvent(submission, dayOfRecurMonth);
+                                    // If there is a recurring event
+                                    if (eventRecurObj !== "") {
+                                        // Grab the start date of the recurring event
+                                        const eventRecurStartDate = new Date(eventRecurObj.startDateTime).getTime();
+                                        // Filter the submission data for entries that have the same submission ID & the recurring event start date is before the submission end date
+                                        const submisFilteredData = filteredData.filter(subEntry => {
+                                            let subEndDate = new Date(subEntry.endDateTime).setHours(23, 59, 59, 999);
+                                            if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
+                                                return subEntry
                                             }
-                                        }
-                                    }
-                                    
-                                } else {
-                                    // If the day date is after the event end date
-                                    if (dayOfRecurMonth.getTime() > endDate) {
-                                        // Take the submission event & create a recurring event if its on this date
-                                        const eventRecurObj = createRecurringEvent(submission, keyList, dayOfRecurMonth);
-                                        // If there is a recurring event
-                                        if (eventRecurObj !== "") {
-                                            // Grab the start date of the recurring event
-                                            const eventRecurStartDate = new Date(eventRecurObj.answers.filter(o => o.questionKey === "startDateTime")[0].value).getTime();
-                                            // Filter the submission data for entries that have the same submission ID & the recurring event start date is before the submission end date
-                                            const submisFilteredData = filteredData.filter(subEntry => {
-                                                let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
-                                                if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
-                                                    return subEntry
-                                                }
-                                            });
-                                            // Filter the recurring events data for entries that have the same ID & the new recurring event start date is before the already created recurring end date
-                                            const recurFilteredData = recurringEvents.filter(subEntry => {
-                                                let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
-                                                if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
-                                                    return subEntry
-                                                }
-                                            });
-                                            // If there are no entries in either filtered dataset, add recurring event to list of created recurring events
-                                            if ((submisFilteredData.length === 0) && (recurFilteredData.length === 0)) {
-                                                recurringEvents.push(eventRecurObj);
+                                        });
+                                        // Filter the recurring events data for entries that have the same ID & the new recurring event start date is before the already created recurring end date
+                                        const recurFilteredData = recurringEvents.filter(subEntry => {
+                                            let subEndDate = new Date(subEntry.endDateTime).setHours(23, 59, 59, 999);
+                                            if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
+                                                return subEntry
                                             }
-                                            
+                                        });
+                                        // If there are no entries in either filtered dataset, add recurring event to list of created recurring events
+                                        if ((submisFilteredData.length === 0) && (recurFilteredData.length === 0)) {
+                                            recurringEvents.push(eventRecurObj);
                                         }
                                     }
                                 }
@@ -340,21 +289,21 @@
                                 // If the day date is after the event end date
                                 if (dayOfRecurMonth.getTime() > endDate) {
                                     // Take the submission event & create a recurring event if its on this date
-                                    const eventRecurObj = createRecurringEvent(submission, keyList, dayOfRecurMonth);
+                                    const eventRecurObj = createRecurringEvent(submission, dayOfRecurMonth);
                                     // If there is a recurring event
                                     if (eventRecurObj !== "") {
                                         // Grab the start date of the recurring event
-                                        const eventRecurStartDate = new Date(eventRecurObj.answers.filter(o => o.questionKey === "startDateTime")[0].value).getTime();
+                                        const eventRecurStartDate = new Date(eventRecurObj.startDateTime).getTime();
                                         // Filter the submission data for entries that have the same submission ID & the recurring event start date is before the submission end date
                                         const submisFilteredData = filteredData.filter(subEntry => {
-                                            let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
+                                            let subEndDate = new Date(subEntry.endDateTime).setHours(23, 59, 59, 999);
                                             if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
                                                 return subEntry
                                             }
                                         });
                                         // Filter the recurring events data for entries that have the same ID & the new recurring event start date is before the already created recurring end date
                                         const recurFilteredData = recurringEvents.filter(subEntry => {
-                                            let subEndDate = new Date(subEntry.answers.filter(o => o.questionKey === "endDateTime")[0].value).setHours(23, 59, 59, 999);
+                                            let subEndDate = new Date(subEntry.endDateTime).setHours(23, 59, 59, 999);
                                             if ((subEntry.submissionId === eventRecurObj.submissionId) && (subEndDate > eventRecurStartDate)) {
                                                 return subEntry
                                             }
@@ -380,28 +329,19 @@
         
         function filterCalendarEvents() {
             // Grab the text from the search bar
-            const searchVal = $("#${topID}_SearchBar").val().toLowerCase();
+            const searchVal = $("#Calendar_SearchBar").val().toLowerCase();
             
             // Filter through each submission in the calendar data
             const filteredEvents = calendarData.filter((submission) => {
-                const keyList = submission.answers.map(o => o.questionKey);
                 
                 // Grab the event name from the submission & transform it to all lower case
-                const eventNameVal = submission.answers.filter(o => o.questionKey === "eventName")[0].value;
-                const eventName = eventNameVal.toLowerCase();
+                const eventName = submission.eventName.toLowerCase();
                 // Grab the event type from the submission & transform it to all lower case
-                let eventType = "";
-                if (keyList.includes("eventType")) {
-                    eventType = submission.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] || "";
-                    eventType = eventType.toLowerCase();
-                }
+                let eventType = submission.eventType.toLowerCase();
                 
                 // Grab the additional information from the submission & transform it to all lower case
-                let addInfo = "";
-                if (keyList.includes("additionalInformation")) {
-                    addInfo = submission.answers.filter(o => o.questionKey === "additionalInformation")[0].value || "";
-                    addInfo  = addInfo.toLowerCase();
-                }
+                let addInfo = submission.additionalInformation.toLowerCase();
+
                 // If the search value is anywhere in either of the 3 values, then it passes the filter
                 return (eventName.includes(searchVal) || eventType.includes(searchVal) || addInfo.includes(searchVal))
                 
@@ -427,7 +367,7 @@
             newDate = new Date(newDate.getFullYear(), newDate.getMonth(), 1);
             
             // Grab the month value from the calendar (0 = current month)
-            const monthDisplayEl = $("#${topID}_MonthDisplay");
+            const monthDisplayEl = $("#Calendar_MonthDisplay");
             // From the element, grab the attribute to help know what month/year to display
             const monthNavVal = Number(monthDisplayEl.attr("navVal"));
             
@@ -466,7 +406,7 @@
             const paddingDays = weekdays.indexOf(dateString.split(", ")[0]);
             
             // Display the month & year in the calendar header
-            document.getElementById('${topID}_MonthDisplay').innerText = newDate.toLocaleDateString('en-us', {month: 'long'}) +" "+ newDate_Year;
+            document.getElementById('Calendar_MonthDisplay').innerText = newDate.toLocaleDateString('en-us', {month: 'long'}) +" "+ newDate_Year;
             
             // Variable that will hold the HTML code to display the month's calendar
             let calendarDays = "";
@@ -488,21 +428,9 @@
             let calendarEndDates = {};
             let calendarStartDates = {};
             filteredCalendarData.forEach(submission => {
-                let startDate, endDate, eventName;
-                
-                submission.answers.forEach(answer => {
-                    switch (answer.questionKey) {
-                        case "startDateTime":
-                            startDate = (typeof answer.value == "string") ? answer.value.slice(0, 10) : answer.value.toISOString().slice(0, 10);
-                            break;
-                        case "endDateTime":
-                            endDate = (typeof answer.value == "string") ? answer.value.slice(0, 10) : answer.value.toISOString().slice(0, 10);
-                            break;
-                        case "eventName":
-                            eventName = answer.value;
-                            break;
-                    }
-                });
+                const startDate = submission.startDateTime;
+                const endDate = submission.endDateTime;
+                const eventName = eventName;
                 
                 calendarStartDates[startDate] = calendarStartDates[startDate] || [];
                 calendarEndDates[endDate] = calendarEndDates[endDate] || [];
@@ -545,10 +473,10 @@
                     // Data filtered to only the calendar events for the current day of the month
                     const todaysData = filteredCalendarData.filter(function(submission) {
                         // Set the start date/time variable from the response
-                        const subStartDateTime = submission.answers.filter(o => o.questionKey === "startDateTime")[0].value;
+                        const subStartDateTime = submission.startDateTime;
                         const testDateStart = new Date(subStartDateTime).setHours(0, 0, 0, 0);
                         // Set the end date/time variable from the response
-                        const subEndDateTime = submission.answers.filter(o => o.questionKey === "endDateTime")[0].value;
+                        const subEndDateTime = submission.endDateTime;
                         const testDateEnd = new Date(subEndDateTime).setHours(23, 59, 59, 999);
                         
                         // If the day of the month is on or after the start day & is on or before the end date, then it passes the filter
@@ -559,9 +487,9 @@
                     if (todaysData.length > 0) {
                         // Sort the events for this day by the start date/time of each event (earliest day/time first)
                         todaysData.sort(function(a, b) {
-                            startA = a.answers.filter(o => o.questionKey === "startDateTime")[0].value;
+                            startA = a.startDateTime;
                             compareA = new Date(startA).getTime();
-                            startB = b.answers.filter(o => o.questionKey === "startDateTime")[0].value;
+                            startB = b.startDateTime;
                             compareB = new Date(startB).getTime();
                             
                             if (compareA > compareB) {
@@ -581,13 +509,12 @@
                             calendarDays += startDayEl+
                                 dayOfMonth+
                                 todaysData.map((submission, index) => {
-                                    const keyList = submission.answers.map(o => o.questionKey);
                                     
                                     // For each event in this day's box, grab the event name from the submission
-                                    const eventName = submission.answers.filter(o => o.questionKey === "eventName")[0].value;
+                                    const eventName = submission.eventName;
                                     
                                     // Grab the start date & time (with some formatting options)
-                                    const startDateTime = new Date(submission.answers.filter(o => o.questionKey === "startDateTime")[0].value);
+                                    const startDateTime = new Date(submission.startDateTime);
                                     const startDate = startDateTime.toLocaleDateString('en-us', {
                                         weekday: 'long',
                                         year: 'numeric',
@@ -599,7 +526,7 @@
                                         minute: "2-digit",
                                     });
                                     // Grab the end date & time (with some formatting options)
-                                    const endDateTime = new Date(submission.answers.filter(o => o.questionKey === "endDateTime")[0].value);
+                                    const endDateTime = new Date(submission.endDateTime);
                                     const addEndDate = new Date(endDateTime).setHours(0, 0, 0, 0);
                                     const endDate = endDateTime.toLocaleDateString('en-us', {
                                         weekday: 'long',
@@ -625,15 +552,7 @@
                                                 day: "2-digit"
                                             });
                                             
-                                    let todaysEvents = [];
-                                    
-                                    todaysData.forEach(submission => {
-                                        submission.answers.forEach(answer => {
-                                            if (answer.questionKey === "eventName") {
-                                                todaysEvents.push(answer.value);
-                                            }
-                                        });
-                                    });
+                                    let todaysEvents = todaysData.map(submission => submission.eventName);
                                     
                                     if (index === 0) {
                                         yesterdaysEvents = (weekDayIndex === 0) ? [] : yesterdaysEvents;
@@ -671,52 +590,25 @@
                                     }
                                     
                                     // Grab the event type, if that question was answered
-                                    let eventType = "";
-                                    if (keyList.includes("eventType")) {
-                                        eventType = submission.answers.filter(o => o.questionKey === "eventType")[0].value.selections[0] || "";
-                                    }
+                                    let eventType = submission.eventType;
                                     
                                     // Grab the additional information, if that question was answered
-                                    let additionalInfo = "";
-                                    if (keyList.includes("additionalInformation")) {
-                                        additionalInfo = submission.answers.filter(o => o.questionKey === "additionalInformation")[0].value || "";
-                                    }
+                                    let additionalInfo = submission.additionalInformation;
                                     
                                     // Grab the recurring time frame, if that question was answered
-                                    let recurTimeFrame = "";
-                                    if (keyList.includes("timeFrame")) {
-                                        if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "DailyWeekday") {
-                                            recurTimeFrame = "Daily - Weekdays Only";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "DailyEveryday") {
-                                            recurTimeFrame = "Daily";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Weekly") {
-                                            recurTimeFrame = "Weekly";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "BiWeekly") {
-                                            recurTimeFrame = "Bi-Weekly";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Monthly") {
-                                            recurTimeFrame = "Monthly";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "BiMonthly") {
-                                            recurTimeFrame = "Bi-Monthly";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Quarterly") {
-                                            recurTimeFrame = "Quarterly";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "SemiAnnually") {
-                                            recurTimeFrame = "Semi-Annually";
-                                        } else if (submission.answers.filter(o => o.questionKey === "timeFrame")[0].value.selections[0] === "Annually") {
-                                            recurTimeFrame = "Annually";
-                                        }
-                                    }
+                                    let recurTimeFrame = submission.timeFrame;
                                     
                                     // Grab the end recurring date, if that question was answered
                                     let recurEndDate = "";
-                                    if (keyList.includes("endRecurring") && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != undefined && submission.answers.filter(o => o.questionKey === "endRecurring")[0].value != "") {
-                                        recurEndDate = new Date(submission.answers.filter(o => o.questionKey === "endRecurring")[0].value).setHours(0, 0, 0, 0) + 86400000;
+
+                                    if (submission.endRecurring != "") {
+                                        recurEndDate = new Date(submission.endRecurring).setHours(0, 0, 0, 0) + 86400000;
                                         recurEndDate = new Date(recurEndDate).toLocaleDateString('en-us', {
                                             weekday: 'long',
                                             year: 'numeric',
                                             month: 'short',
                                             day: 'numeric',
                                         });
-                                        
                                     }
                                     
                                     // Create the event text that will display on the calendar
@@ -727,10 +619,6 @@
                                     } else {
                                         // If not, only display the event name
                                         eventIconName = eventName;
-                                    }
-                                    // If the event display text is longer than 23 characters, truncate it to fit within 1 line of the box
-                                    if (eventIconName.length > 23) {
-                                        eventIconName = eventIconName.slice(0, 21)+"...";
                                     }
                                     
                                     let span = 7 - weekDayIndex;
@@ -795,6 +683,7 @@
                             calendarDays += startDayEl+
                                 dayOfMonth+
                                 todaysData.map((submission, index) => {
+                                    
                                     const keyList = submission.answers.map(o => o.questionKey);
                                     
                                     // For each event in this day's box, grab the event name from the submission
@@ -1077,45 +966,30 @@
             };
             
             // Display the calendar variable in the calendar element created in the HTML
-            document.getElementById('${topID}_CalendarDisplay').innerHTML = calendarDays;
+            document.getElementById('Calendar_CalendarDisplay').innerHTML = calendarDays;
             
             findSubmissionBtns();
         }
         
         // Function that fetches the data from the API instead of using the Freemarker list to grab them one by one
         // Only update needed to this function is to change the 'formId=' to whichever form the new calendar is going to be copied to
-        function fetchData(cumulativeData, page) {
-            const tmpDate = new Date();
-            const options = {
-                method: 'GET',
-                credentials: 'include',
-                headers: {
-                    'Content-Type': 'application/json',
-                }
-            };
-            return fetch('https://www-api.pixtoday.net/form/submissionsnapshot/search?page='+page+'&size=2000&formId=298&currentOnly=true&keys=eventName,startDateTime,endDateTime,eventType,additionalInformation,timeFrame,endRecurring', options)
+        function fetchData() {
+            return fetch('data/calendarData.json')
                 .then(function (response) {
                     if (response.status === 200) {
-                        return response.json().then(async data => {
-                            if (data.last) {
-                                return [...cumulativeData, ...data.content]
-                            }
-                            else {
-                                fetchData([...cumulativeData, ...data.content], page + 1);
-                            }
-                        });
+                        return response.json();
                     }
                 })
                 .catch(function (error) {
                     console.log(error);
-                    document.getElementById('${topID}_CalendarDisplay').innerHTML = 'Error loading data...';
+                    document.getElementById('Calendar_CalendarDisplay').innerHTML = 'Error loading data...';
                 });
         }
         
         // Function that increases the month value & moves the calendar to the next month
         function moveToNextMonth() {
             // Grab the month value from the calendar (0 = current month)
-            const monthDisplayEl = $("#${topID}_MonthDisplay");
+            const monthDisplayEl = $("#Calendar_MonthDisplay");
             let monthNavVal = Number(monthDisplayEl.attr("navVal"));
             // Add 1 to the month value (1 = next month, 2 = 2 months from now, etc.)
             monthNavVal++;
@@ -1128,7 +1002,7 @@
         // Function that increases the month value & moves the calendar to the next month
         function moveToPrevMonth() {
             // Grab the month value from the calendar (0 = current month)
-            const monthDisplayEl = $("#${topID}_MonthDisplay");
+            const monthDisplayEl = $("#Calendar_MonthDisplay");
             let monthNavVal = Number(monthDisplayEl.attr("navVal"));
             // Subtract 1 to the month value (-1 = previous month, -2 = 2 months previous, etc.)
             monthNavVal--;
@@ -1141,28 +1015,28 @@
         
         async function init() {
             // Fetch the data from the form, wait until all the data has been fetched before proceeding
-            calendarData = await fetchData([], 0);
+            calendarData = await fetchData();
             
             // Wait for the template to finish rendering before grabing the top ID
             const topLevelElement = await waitForTopLevelElement();
             
             // Grab the month value from the calendar (0 = current month)
-            const monthDisplayEl = topLevelElement.find("#${topID}_MonthDisplay");
+            const monthDisplayEl = topLevelElement.find("#Calendar_MonthDisplay");
             const monthNavVal = Number(monthDisplayEl.attr("navVal"));
             
             // Call the function to build the calendar view for the current month
             displayCalendar();
             
             // Grab the next & previous month buttons
-            const nextMonthBtn = topLevelElement.find("#${topID}_NextMonthBtn");
-            const prevMonthBtn = topLevelElement.find("#${topID}_PrevMonthBtn");
+            const nextMonthBtn = topLevelElement.find("#Calendar_NextMonthBtn");
+            const prevMonthBtn = topLevelElement.find("#Calendar_PrevMonthBtn");
             
             // Add event handlers to move between months based on which buttons are clicked
             addEventHandler(nextMonthBtn, "click", moveToNextMonth);
             addEventHandler(prevMonthBtn, "click", moveToPrevMonth);
             
             // Grab the search bar
-            const searchBarEl = topLevelElement.find("#${topID}_SearchBar");
+            const searchBarEl = topLevelElement.find("#Calendar_SearchBar");
             
             // Add event listeners that calls the function to build the calendar display after filtering the data
             // The call will wait 0.5s after the final keyup value is inputted to prevent continual filtering

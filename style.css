@@ -1,244 +1,240 @@
-<style>
+/* Entire template visualization container */
+#Calendar {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #FFFCFF;
+    overflow-x: auto;
+}
 
-    /* Entire template visualization container */
-    #${topID} {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 15px;
-        padding: 15px;
-        background-color: #FFFCFF;
-        overflow-x: auto;
-    }
+/* Container that justify centers content for calendar */
+#Calendar #Calendar_CalendarCenterContent {
+    width: 100%;
+}
 
-    /* Container that justify centers content for calendar */
-    #${topID} #${topID}_CalendarCenterContent {
-        width: 100%;
-    }
+/* Container within visualization that holds all the content */
+#Calendar #Calendar_CalendarContainer {
+    width: 100%;
+    margin-bottom: 5px;
+}
 
-    /* Container within visualization that holds all the content */
-    #${topID} #${topID}_CalendarContainer {
-        width: 100%;
-        margin-bottom: 5px;
-    }
+/* Header that displays current month & holds buttons to move between months */
+#Calendar #Calendar_Header {
+    width: 100%;
+    padding: 10px;
+    color: #000;
+    background-color: #ADB5BD;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
 
-    /* Header that displays current month & holds buttons to move between months */
-    #${topID} #${topID}_Header {
-        width: 100%;
-        padding: 10px;
-        color: #000;
-        background-color: #ADB5BD;
-        font-size: 25px;
-        font-family: sans-serif;
-        font-weight: bold;
-        display: flex;
-        justify-content: space-between;
-        border-radius: 5px;
-    }
+/* Buttons in header to toggle between previous & next month */
+#Calendar #Calendar_PrevMonthBtn,
+#Calendar #Calendar_NextMonthBtn {
+    width: 125px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 13px;
+}
 
-    /* Buttons in header to toggle between previous & next month */
-    #${topID} #${topID}_PrevMonthBtn,
-    #${topID} #${topID}_NextMonthBtn {
-        width: 125px;
-        height: 35px;
-        cursor: pointer;
-        box-shadow: 0px 0px 2px gray;
-        border: none;
-        outline: none;
-        padding: 5px;
-        border-radius: 5px;
-        color: #000;
-        font-size: 13px;
-    }
+/* Bold the text of the buttons when you hover over it */
+#Calendar #Calendar_PrevMonthBtn:hover,
+#Calendar #Calendar_NextMonthBtn:hover {
+    font-weight: bold;
+}
 
-    /* Bold the text of the buttons when you hover over it */
-    #${topID} #${topID}_PrevMonthBtn:hover,
-    #${topID} #${topID}_NextMonthBtn:hover {
-        font-weight: bold;
-    }
+/* When you click on the button, shrink it by 2% to give effect of a button click */
+#Calendar_PrevMonthBtn:active,
+#Calendar #Calendar_NextMonthBtn:active {
+    transform: scale(0.98);
+}
 
-    /* When you click on the button, shrink it by 2% to give effect of a button click */
-    #${topID}_PrevMonthBtn:active,
-    #${topID} #${topID}_NextMonthBtn:active {
-        transform: scale(0.98);
-    }
+/* Div that holds the days of the week */
+#Calendar #Calendar_Weekdays {
+    width: 100%;
+    display: flex;
+    color: #000;
+}
 
-    /* Div that holds the days of the week */
-    #${topID} #${topID}_Weekdays {
-        width: 100%;
-        display: flex;
-        color: #000;
-    }
+/* Individual divs that display the days of the week */
+#Calendar #Calendar_Weekdays div {
+    width: calc(100% / 7);
+    padding: 10px;
+    margin: 0px 5px;
+    text-align: center;
+}
 
-    /* Individual divs that display the days of the week */
-    #${topID} #${topID}_Weekdays div {
-        width: calc(100% / 7);
-        padding: 10px;
-        margin: 0px 5px;
-        text-align: center;
-    }
+/* Div that will hold the squares that represent each day in the month */
+#Calendar #Calendar_CalendarDisplay {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    /* Div that will hold the squares that represent each day in the month */
-    #${topID} #${topID}_CalendarDisplay {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-    }
+/* Day boxes for the days in the current month */
+#Calendar .monthDay {
+    width: calc(100% / 7);
+    padding: 10px;
+    height: 175px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+}
 
-    /* Day boxes for the days in the current month */
-    #${topID} .monthDay {
-        width: calc(100% / 7);
-        padding: 10px;
-        height: 175px;
-        box-sizing: border-box;
-        background-color: #fff;
-        box-shadow: 0px 0px 3px #CBD4C2;
-        display: flex;
-        flex-direction: column;
-    }
+/* Day box for the current day - gives a slight blue color to box */
+#Calendar .monthDayToday {
+    width: calc(100% / 7);
+    padding: 10px;
+    height: 175px;
+    box-sizing: border-box;
+    background-color: #e6e6ff;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+}
 
-    /* Day box for the current day - gives a slight blue color to box */
-    #${topID} .monthDayToday {
-        width: calc(100% / 7);
-        padding: 10px;
-        height: 175px;
-        box-sizing: border-box;
-        background-color: #e6e6ff;
-        box-shadow: 0px 0px 3px #CBD4C2;
-        display: flex;
-        flex-direction: column;
-    }
+/* Standard calendar event icon settings */
+#Calendar .dayEvent {
+    position: relative;
+    height: 20px;
+    font-size: 13px;
+    cursor: pointer;
+    margin-bottom: 3px;
+    padding: 0px;
+    padding-left: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
-    /* Standard calendar event icon settings */
-    #${topID} .dayEvent {
-        position: relative;
-        height: 20px;
-        font-size: 13px;
-        cursor: pointer;
-        margin-bottom: 3px;
-        padding: 0px;
-        padding-left: 2px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
+/* When you hover over any of the event boxes */
+#Calendar .dayEvent:hover {
+    border: 1px solid black;
+    font-weight: bold;
+}
 
-    /* When you hover over any of the event boxes */
-    #${topID} .dayEvent:hover {
-        border: 1px solid black;
-        font-weight: bold;
-    }
+/* When you click on any of the event boxes*/
+#Calendar .dayEvent:active {
+    transform: scale(0.98);
+}
 
-    /* When you click on any of the event boxes*/
-    #${topID} .dayEvent:active {
-        transform: scale(0.98);
-    }
+/* If the event type question was not answered */
+#Calendar .eventType_ {
+    background-color: #A84421;
+    color: #fff
+}
 
-    /* If the event type question was not answered */
-    #${topID} .eventType_ {
-        background-color: #A84421;
-        color: #fff
-    }
+/* If the event type response was Conference */
+#Calendar .eventType_Conference {
+    background-color: #1F449C;
+    color: #fff;
+}
 
-    /* If the event type response was Conference */
-    #${topID} .eventType_Conference {
-        background-color: #1F449C;
-        color: #fff;
-    }
+/* If the event type response was Workshop */
+#Calendar .eventType_Workshop {
+    background-color: #A8B6CC;
+    color: #000
+}
 
-    /* If the event type response was Workshop */
-    #${topID} .eventType_Workshop {
-        background-color: #A8B6CC;
-        color: #000
-    }
+/* If the event type response was Networking */
+#Calendar .eventType_Networking {
+    background-color: #0F7B1D;
+    color: #fff;
+}
 
-    /* If the event type response was Networking */
-    #${topID} .eventType_Networking {
-        background-color: #0F7B1D;
-        color: #fff;
-    }
+/* If the event type response was Other */
+#Calendar .eventType_Other {
+    background-color: #8F25BF;
+    color: #fff;
+}
 
-    /* If the event type response was Other */
-    #${topID} .eventType_Other {
-        background-color: #8F25BF;
-        color: #fff;
-    }
+/* Banner across top that holds the legend for the color coded events */
+#Calendar #Calendar_Info {
+    height: 25px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    display: flex; 
+    justify-content: space-between;
+}
 
-    /* Banner across top that holds the legend for the color coded events */
-    #${topID} #${topID}_Info {
-        height: 25px;
-        width: 100%;
-        margin-top: 15px;
-        margin-bottom: 5px;
-        display: flex; 
-        justify-content: space-between;
-    }
+/* Container that holds the button to create a new event*/
+#Calendar #Calendar_NewEventBtn_Container {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-    /* Container that holds the button to create a new event*/
-    #${topID} #${topID}_NewEventBtn_Container {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+/* The link within the new event button */
+#Calendar #Calendar_NewEventBtn_Link {
+    color: #000;
+    text-decoration: none!important;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    text-align: center;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ADB5BD;
+}
 
-    /* The link within the new event button */
-    #${topID} #${topID}_NewEventBtn_Link {
-        color: #000;
-        text-decoration: none!important;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0px 0px 2px gray;
-        text-align: center;
-        outline: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        background-color: #ADB5BD;
-    }
+/* When you hover over the link within the new event button */
+#Calendar #Calendar_NewEventBtn_Link:hover {
+    color: #FFF;
+    text-decoration: none!important;
+}
 
-    /* When you hover over the link within the new event button */
-    #${topID} #${topID}_NewEventBtn_Link:hover {
-        color: #FFF;
-        text-decoration: none!important;
-    }
+#Calendar #Calendar_SearchBar {
+    width: 100%;
+    margin-bottom: 15px;
+}
 
-    #${topID} #${topID}_SearchBar {
-        width: 100%;
-        margin-bottom: 15px;
-    }
+/* Box that gets filled in with the event type colors in the legend*/
+#Calendar .colorBox {
+    margin-top: 4px;
+    margin-right: 2px;
+    height: 15px;
+    width: 15px;
+    align-items: center;
+}
 
-    /* Box that gets filled in with the event type colors in the legend*/
-    #${topID} .colorBox {
-        margin-top: 4px;
-        margin-right: 2px;
-        height: 15px;
-        width: 15px;
-        align-items: center;
-    }
+/* Hidden day boxes for the previous month when current month doesn't start on Sunday */
+#Calendar .paddingDay {
+    cursor: default !important;
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+}
 
-    /* Hidden day boxes for the previous month when current month doesn't start on Sunday */
-    #${topID} .paddingDay {
-        cursor: default !important;
-        background-color: #FFFCFF !important;
-        box-shadow: none !important;
-    }
+/* Styling class for the submission modal button */
+#Calendar .submission-calendar-modal-btn {
+    background-color: #0185AF;
+    color: #FFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
 
-    /* Styling class for the submission modal button */
-    #${topID} .submission-calendar-modal-btn {
-        background-color: #0185AF;
-        color: #FFF;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-    }
+/* Styling class for the submission modal button when you hover over it */
+#Calendar .submission-calendar-modal-btn:hover {
+    background-color: #6FC6E2;
+    color: #FFF;
+}
 
-    /* Styling class for the submission modal button when you hover over it */
-    #${topID} .submission-calendar-modal-btn:hover {
-        background-color: #6FC6E2;
-        color: #FFF;
-    }
-
-    /* Styling class for the submission modal button when you click on it */
-    #${topID} .submission-calendar-modal-btn:active {
-        transform: scale(0.95);
-    }
-    
-</style>
+/* Styling class for the submission modal button when you click on it */
+#Calendar .submission-calendar-modal-btn:active {
+    transform: scale(0.95);
+}
