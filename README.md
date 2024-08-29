@@ -1,1 +1,1 @@
-# VisualizeJS
+# Calendar with Connected Events
