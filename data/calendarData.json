@@ -1,2171 +1,1712 @@
 [
     {
-        "eventName": "Out Sick - Alice Smith",
-        "startDateTime": "August 01st, 2025 at 09:00",
-        "endDateTime": "August 01st, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Out Sick - Alice Smith on August 01",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 01st, 2026"
+        "eventName": "Morning Meeting",
+        "startDateTime": "August 01st, 2024 at 10:00",
+        "endDateTime": "August 01st, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Morning Meeting from August 01 to August 01",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 01st, 2025"
     },
     {
         "eventName": "Client Call",
-        "startDateTime": "August 01st, 2025 at 10:00",
-        "endDateTime": "August 01st, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Client Call on August 01",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 01st, 2026"
+        "startDateTime": "August 01st, 2024 at 10:00",
+        "endDateTime": "August 01st, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call from August 01 to August 01",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 01st, 2025"
     },
     {
-        "eventName": "Project Review",
-        "startDateTime": "August 01st, 2025 at 11:00",
-        "endDateTime": "August 01st, 2025 at 12:00",
+        "eventName": "Code Review",
+        "startDateTime": "August 01st, 2024 at 09:00",
+        "endDateTime": "August 01st, 2024 at 17:00",
         "eventType": "Workshop",
-        "additionalInformation": "Details about Project Review on August 01",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 01st, 2026"
+        "additionalInformation": "Details about Code Review from August 01 to August 01",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 01st, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 01st, 2024 at 10:00",
+        "endDateTime": "August 01st, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Strategy Session from August 01 to August 01",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 01st, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "August 02nd, 2024 at 12:00",
+        "endDateTime": "August 02nd, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Budget Review from August 02 to August 02",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 02nd, 2025"
     },
     {
         "eventName": "1:1 with Manager",
-        "startDateTime": "August 01st, 2025 at 12:00",
-        "endDateTime": "August 01st, 2025 at 13:00",
+        "startDateTime": "August 02nd, 2024 at 13:00",
+        "endDateTime": "August 02nd, 2024 at 16:00",
         "eventType": "Presentation",
-        "additionalInformation": "Details about 1:1 with Manager on August 01",
-        "timeFrame": "Annually",
-        "endRecurring": "August 01st, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 01st, 2025 at 13:00",
-        "endDateTime": "August 01st, 2025 at 14:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about HR Training on August 01",
+        "additionalInformation": "Details about 1:1 with Manager from August 02 to August 02",
         "timeFrame": "Quarterly",
-        "endRecurring": "August 01st, 2026"
-    },
-    {
-        "eventName": "PTO - Alice Smith",
-        "startDateTime": "August 02nd, 2025 at 09:00",
-        "endDateTime": "August 02nd, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about PTO - Alice Smith on August 02",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 02nd, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 02nd, 2025 at 10:00",
-        "endDateTime": "August 02nd, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Standup on August 02",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 02nd, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 02nd, 2025 at 11:00",
-        "endDateTime": "August 02nd, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Budget Review on August 02",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 02nd, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "August 03rd, 2025 at 09:00",
-        "endDateTime": "August 03rd, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Product Demo on August 03",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 03rd, 2026"
+        "endRecurring": "August 02nd, 2025"
     },
     {
         "eventName": "Morning Meeting",
-        "startDateTime": "August 03rd, 2025 at 10:00",
-        "endDateTime": "August 03rd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Morning Meeting on August 03",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 03rd, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 03rd, 2025 at 11:00",
-        "endDateTime": "August 03rd, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Onboarding Session on August 03",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 03rd, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 03rd, 2025 at 12:00",
-        "endDateTime": "August 03rd, 2025 at 13:00",
+        "startDateTime": "August 03rd, 2024 at 12:00",
+        "endDateTime": "August 03rd, 2024 at 17:00",
         "eventType": "Conference",
-        "additionalInformation": "Details about Standup on August 03",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 03rd, 2026"
-    },
-    {
-        "eventName": "PTO - George Harris",
-        "startDateTime": "August 03rd, 2025 at 13:00",
-        "endDateTime": "August 03rd, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about PTO - George Harris on August 03",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 03rd, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 03rd, 2025 at 14:00",
-        "endDateTime": "August 03rd, 2025 at 15:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Strategy Session on August 03",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 03rd, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 04th, 2025 at 09:00",
-        "endDateTime": "August 04th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about HR Training on August 04",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 04th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "August 04th, 2025 at 10:00",
-        "endDateTime": "August 04th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Project Review on August 04",
+        "additionalInformation": "Details about Morning Meeting from August 03 to August 03",
         "timeFrame": "Weekly",
-        "endRecurring": "August 04th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 04th, 2025 at 11:00",
-        "endDateTime": "August 04th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Strategy Session on August 04",
-        "timeFrame": "Annually",
-        "endRecurring": "August 04th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 04th, 2025 at 12:00",
-        "endDateTime": "August 04th, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Client Presentation on August 04",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 04th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 05th, 2025 at 09:00",
-        "endDateTime": "August 05th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Standup on August 05",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 05th, 2026"
+        "endRecurring": "August 03rd, 2025"
     },
     {
         "eventName": "Budget Review",
-        "startDateTime": "August 06th, 2025 at 09:00",
-        "endDateTime": "August 06th, 2025 at 10:00",
+        "startDateTime": "August 03rd, 2024 at 12:00",
+        "endDateTime": "August 03rd, 2024 at 17:00",
         "eventType": "Networking",
-        "additionalInformation": "Details about Budget Review on August 06",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 06th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "August 06th, 2025 at 10:00",
-        "endDateTime": "August 06th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Morning Meeting on August 06",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 06th, 2026"
+        "additionalInformation": "Details about Budget Review from August 03 to August 03",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "August 03rd, 2025"
     },
     {
         "eventName": "Standup",
-        "startDateTime": "August 06th, 2025 at 11:00",
-        "endDateTime": "August 06th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Standup on August 06",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 06th, 2026"
-    },
-    {
-        "eventName": "PTO - Charlie Brown",
-        "startDateTime": "August 06th, 2025 at 12:00",
-        "endDateTime": "August 06th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about PTO - Charlie Brown on August 06",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 06th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 06th, 2025 at 13:00",
-        "endDateTime": "August 06th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Code Review on August 06",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 06th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "August 06th, 2025 at 14:00",
-        "endDateTime": "August 06th, 2025 at 15:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Design Workshop on August 06",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 06th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 07th, 2025 at 09:00",
-        "endDateTime": "August 07th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Strategy Session on August 07",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 07th, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 08th, 2025 at 09:00",
-        "endDateTime": "August 08th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Onboarding Session on August 08",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "August 08th, 2025 at 10:00",
-        "endDateTime": "August 08th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Design Workshop on August 08",
-        "timeFrame": "Annually",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "August 08th, 2025 at 11:00",
-        "endDateTime": "August 08th, 2025 at 12:00",
+        "startDateTime": "August 04th, 2024 at 09:00",
+        "endDateTime": "August 04th, 2024 at 16:00",
         "eventType": "Workshop",
-        "additionalInformation": "Details about Client Call on August 08",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 08th, 2025 at 12:00",
-        "endDateTime": "August 08th, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about All-Hands Meeting on August 08",
-        "timeFrame": "Annually",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 08th, 2025 at 13:00",
-        "endDateTime": "August 08th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Client Presentation on August 08",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 08th, 2025 at 14:00",
-        "endDateTime": "August 08th, 2025 at 15:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Standup on August 08",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 08th, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 09th, 2025 at 09:00",
-        "endDateTime": "August 09th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Onboarding Session on August 09",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 09th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 09th, 2025 at 10:00",
-        "endDateTime": "August 09th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Standup on August 09",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 09th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Bob Johnson",
-        "startDateTime": "August 09th, 2025 at 11:00",
-        "endDateTime": "August 09th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Out Sick - Bob Johnson on August 09",
+        "additionalInformation": "Details about Standup from August 04 to August 04",
         "timeFrame": "BiWeekly",
-        "endRecurring": "August 09th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 09th, 2025 at 12:00",
-        "endDateTime": "August 09th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Code Review on August 09",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 09th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "August 10th, 2025 at 09:00",
-        "endDateTime": "August 10th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Product Demo on August 10",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 10th, 2025 at 10:00",
-        "endDateTime": "August 10th, 2025 at 11:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Budget Review on August 10",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "August 10th, 2025 at 11:00",
-        "endDateTime": "August 10th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Design Workshop on August 10",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "August 10th, 2025 at 12:00",
-        "endDateTime": "August 10th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Project Review on August 10",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 10th, 2025 at 13:00",
-        "endDateTime": "August 10th, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about All-Hands Meeting on August 10",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 10th, 2025 at 14:00",
-        "endDateTime": "August 10th, 2025 at 15:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about HR Training on August 10",
-        "timeFrame": "Annually",
-        "endRecurring": "August 10th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 11th, 2025 at 09:00",
-        "endDateTime": "August 11th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Code Review on August 11",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 11th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 11th, 2025 at 10:00",
-        "endDateTime": "August 11th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Strategy Session on August 11",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 11th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "August 11th, 2025 at 11:00",
-        "endDateTime": "August 11th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Project Review on August 11",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 11th, 2026"
+        "endRecurring": "August 04th, 2025"
     },
     {
         "eventName": "Quarterly Planning",
-        "startDateTime": "August 12th, 2025 at 09:00",
-        "endDateTime": "August 12th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Quarterly Planning on August 12",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "August 12th, 2025 at 10:00",
-        "endDateTime": "August 12th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Design Workshop on August 12",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "August 12th, 2025 at 11:00",
-        "endDateTime": "August 12th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Team Lunch on August 12",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 12th, 2025 at 12:00",
-        "endDateTime": "August 12th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Strategy Session on August 12",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 12th, 2025 at 13:00",
-        "endDateTime": "August 12th, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about 1:1 with Manager on August 12",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 12th, 2025 at 14:00",
-        "endDateTime": "August 12th, 2025 at 15:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about All-Hands Meeting on August 12",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 12th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "August 13th, 2025 at 09:00",
-        "endDateTime": "August 13th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Morning Meeting on August 13",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 13th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 13th, 2025 at 10:00",
-        "endDateTime": "August 13th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Strategy Session on August 13",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 13th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 13th, 2025 at 11:00",
-        "endDateTime": "August 13th, 2025 at 12:00",
+        "startDateTime": "August 04th, 2024 at 10:00",
+        "endDateTime": "August 04th, 2024 at 16:00",
         "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on August 13",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 13th, 2026"
+        "additionalInformation": "Details about Quarterly Planning from August 04 to August 04",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 04th, 2025"
     },
     {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 13th, 2025 at 12:00",
-        "endDateTime": "August 13th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Onboarding Session on August 13",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 13th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Diana Evans",
-        "startDateTime": "August 14th, 2025 at 09:00",
-        "endDateTime": "August 14th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Out Sick - Diana Evans on August 14",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 14th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 14th, 2025 at 10:00",
-        "endDateTime": "August 14th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on August 14",
+        "eventName": "Code Review",
+        "startDateTime": "August 05th, 2024 at 10:00",
+        "endDateTime": "August 05th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review from August 05 to August 05",
         "timeFrame": "Weekly",
-        "endRecurring": "August 14th, 2026"
+        "endRecurring": "August 05th, 2025"
     },
     {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 14th, 2025 at 11:00",
-        "endDateTime": "August 14th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about All-Hands Meeting on August 14",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 14th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "August 14th, 2025 at 12:00",
-        "endDateTime": "August 14th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Quarterly Planning on August 14",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 14th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 15th, 2025 at 09:00",
-        "endDateTime": "August 15th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Client Presentation on August 15",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 15th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "August 15th, 2025 at 10:00",
-        "endDateTime": "August 15th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Quarterly Planning on August 15",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 15th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 15th, 2025 at 11:00",
-        "endDateTime": "August 15th, 2025 at 12:00",
+        "eventName": "Performance Review",
+        "startDateTime": "August 05th, 2024 at 10:00",
+        "endDateTime": "August 05th, 2024 at 16:00",
         "eventType": "Workshop",
-        "additionalInformation": "Details about Standup on August 15",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 15th, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 15th, 2025 at 12:00",
-        "endDateTime": "August 15th, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Onboarding Session on August 15",
+        "additionalInformation": "Details about Performance Review from August 05 to August 05",
         "timeFrame": "Monthly",
-        "endRecurring": "August 15th, 2026"
+        "endRecurring": "August 05th, 2025"
     },
     {
         "eventName": "Year-End Party",
-        "startDateTime": "August 15th, 2025 at 13:00",
-        "endDateTime": "August 15th, 2025 at 14:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Year-End Party on August 15",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 15th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 16th, 2025 at 09:00",
-        "endDateTime": "August 16th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about 1:1 with Manager on August 16",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 16th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 16th, 2025 at 10:00",
-        "endDateTime": "August 16th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about HR Training on August 16",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 16th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "August 16th, 2025 at 11:00",
-        "endDateTime": "August 16th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Design Workshop on August 16",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 16th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "August 16th, 2025 at 12:00",
-        "endDateTime": "August 16th, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Morning Meeting on August 16",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 16th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 16th, 2025 at 13:00",
-        "endDateTime": "August 16th, 2025 at 14:00",
+        "startDateTime": "August 06th, 2024 at 10:00",
+        "endDateTime": "August 06th, 2024 at 17:00",
         "eventType": "Review",
-        "additionalInformation": "Details about Client Presentation on August 16",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 16th, 2026"
-    },
-    {
-        "eventName": "Out Sick - George Harris",
-        "startDateTime": "August 17th, 2025 at 09:00",
-        "endDateTime": "August 17th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Out Sick - George Harris on August 17",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 17th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "August 17th, 2025 at 10:00",
-        "endDateTime": "August 17th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Product Demo on August 17",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 17th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 17th, 2025 at 11:00",
-        "endDateTime": "August 17th, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about HR Training on August 17",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 17th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 18th, 2025 at 09:00",
-        "endDateTime": "August 18th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Code Review on August 18",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 18th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 18th, 2025 at 10:00",
-        "endDateTime": "August 18th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Budget Review on August 18",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 18th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 18th, 2025 at 11:00",
-        "endDateTime": "August 18th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Presentation on August 18",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 18th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Diana Evans",
-        "startDateTime": "August 18th, 2025 at 12:00",
-        "endDateTime": "August 18th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - Diana Evans on August 18",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 18th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Ethan Davis",
-        "startDateTime": "August 19th, 2025 at 09:00",
-        "endDateTime": "August 19th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - Ethan Davis on August 19",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 19th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "August 19th, 2025 at 10:00",
-        "endDateTime": "August 19th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Team Lunch on August 19",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 19th, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "August 19th, 2025 at 11:00",
-        "endDateTime": "August 19th, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on August 19",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 19th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 19th, 2025 at 12:00",
-        "endDateTime": "August 19th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on August 19",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 19th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 19th, 2025 at 13:00",
-        "endDateTime": "August 19th, 2025 at 14:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about All-Hands Meeting on August 19",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 19th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 20th, 2025 at 09:00",
-        "endDateTime": "August 20th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about 1:1 with Manager on August 20",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 20th, 2025 at 10:00",
-        "endDateTime": "August 20th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Standup on August 20",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 20th, 2025 at 11:00",
-        "endDateTime": "August 20th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Onboarding Session on August 20",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Charlie Brown",
-        "startDateTime": "August 20th, 2025 at 12:00",
-        "endDateTime": "August 20th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - Charlie Brown on August 20",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "August 20th, 2025 at 13:00",
-        "endDateTime": "August 20th, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Client Call on August 20",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "August 20th, 2025 at 14:00",
-        "endDateTime": "August 20th, 2025 at 15:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about All-Hands Meeting on August 20",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 20th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "August 21st, 2025 at 09:00",
-        "endDateTime": "August 21st, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Project Review on August 21",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 21st, 2026"
-    },
-    {
-        "eventName": "Out Sick - Charlie Brown",
-        "startDateTime": "August 21st, 2025 at 10:00",
-        "endDateTime": "August 21st, 2025 at 11:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Out Sick - Charlie Brown on August 21",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 21st, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "August 21st, 2025 at 11:00",
-        "endDateTime": "August 21st, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Onboarding Session on August 21",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 21st, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "August 22nd, 2025 at 09:00",
-        "endDateTime": "August 22nd, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Team Lunch on August 22",
+        "additionalInformation": "Details about Year-End Party from August 06 to August 06",
         "timeFrame": "Weekly",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 22nd, 2025 at 10:00",
-        "endDateTime": "August 22nd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Performance Review on August 22",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 22nd, 2025 at 11:00",
-        "endDateTime": "August 22nd, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about HR Training on August 22",
-        "timeFrame": "Annually",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 22nd, 2025 at 12:00",
-        "endDateTime": "August 22nd, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Code Review on August 22",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "PTO - Bob Johnson",
-        "startDateTime": "August 22nd, 2025 at 13:00",
-        "endDateTime": "August 22nd, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about PTO - Bob Johnson on August 22",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 22nd, 2025 at 14:00",
-        "endDateTime": "August 22nd, 2025 at 15:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Standup on August 22",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 22nd, 2026"
-    },
-    {
-        "eventName": "PTO - Fiona Green",
-        "startDateTime": "August 23rd, 2025 at 09:00",
-        "endDateTime": "August 23rd, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about PTO - Fiona Green on August 23",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 23rd, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "August 23rd, 2025 at 10:00",
-        "endDateTime": "August 23rd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on August 23",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 23rd, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "August 23rd, 2025 at 11:00",
-        "endDateTime": "August 23rd, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Strategy Session on August 23",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 23rd, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 23rd, 2025 at 12:00",
-        "endDateTime": "August 23rd, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about 1:1 with Manager on August 23",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 23rd, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 23rd, 2025 at 13:00",
-        "endDateTime": "August 23rd, 2025 at 14:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Standup on August 23",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 23rd, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 24th, 2025 at 09:00",
-        "endDateTime": "August 24th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Code Review on August 24",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 24th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "August 24th, 2025 at 10:00",
-        "endDateTime": "August 24th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Project Review on August 24",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "August 24th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "August 24th, 2025 at 11:00",
-        "endDateTime": "August 24th, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Morning Meeting on August 24",
-        "timeFrame": "Annually",
-        "endRecurring": "August 24th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 24th, 2025 at 12:00",
-        "endDateTime": "August 24th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Performance Review on August 24",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 24th, 2026"
-    },
-    {
-        "eventName": "PTO - Diana Evans",
-        "startDateTime": "August 24th, 2025 at 13:00",
-        "endDateTime": "August 24th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about PTO - Diana Evans on August 24",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 24th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 25th, 2025 at 09:00",
-        "endDateTime": "August 25th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Performance Review on August 25",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 25th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 25th, 2025 at 10:00",
-        "endDateTime": "August 25th, 2025 at 11:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about 1:1 with Manager on August 25",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 25th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "August 26th, 2025 at 09:00",
-        "endDateTime": "August 26th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Code Review on August 26",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 26th, 2025 at 10:00",
-        "endDateTime": "August 26th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on August 26",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "August 26th, 2025 at 11:00",
-        "endDateTime": "August 26th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Call on August 26",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "August 26th, 2025 at 12:00",
-        "endDateTime": "August 26th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Team Lunch on August 26",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 26th, 2025 at 13:00",
-        "endDateTime": "August 26th, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Performance Review on August 26",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "August 26th, 2025 at 14:00",
-        "endDateTime": "August 26th, 2025 at 15:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Quarterly Planning on August 26",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 26th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 27th, 2025 at 09:00",
-        "endDateTime": "August 27th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Performance Review on August 27",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 27th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "August 27th, 2025 at 10:00",
-        "endDateTime": "August 27th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on August 27",
-        "timeFrame": "Monthly",
-        "endRecurring": "August 27th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "August 27th, 2025 at 11:00",
-        "endDateTime": "August 27th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Call on August 27",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "August 27th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 28th, 2025 at 09:00",
-        "endDateTime": "August 28th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about 1:1 with Manager on August 28",
-        "timeFrame": "Annually",
-        "endRecurring": "August 28th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 28th, 2025 at 10:00",
-        "endDateTime": "August 28th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about HR Training on August 28",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 28th, 2026"
-    },
-    {
-        "eventName": "PTO - Hannah White",
-        "startDateTime": "August 28th, 2025 at 11:00",
-        "endDateTime": "August 28th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about PTO - Hannah White on August 28",
-        "timeFrame": "Annually",
-        "endRecurring": "August 28th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 29th, 2025 at 09:00",
-        "endDateTime": "August 29th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about HR Training on August 29",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 29th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "August 29th, 2025 at 10:00",
-        "endDateTime": "August 29th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Performance Review on August 29",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "August 29th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "August 29th, 2025 at 11:00",
-        "endDateTime": "August 29th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Team Lunch on August 29",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 29th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "August 30th, 2025 at 09:00",
-        "endDateTime": "August 30th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Quarterly Planning on August 30",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 30th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "August 30th, 2025 at 10:00",
-        "endDateTime": "August 30th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Presentation on August 30",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 30th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "August 30th, 2025 at 11:00",
-        "endDateTime": "August 30th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about 1:1 with Manager on August 30",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 30th, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "August 31st, 2025 at 09:00",
-        "endDateTime": "August 31st, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on August 31",
-        "timeFrame": "Weekly",
-        "endRecurring": "August 31st, 2026"
+        "endRecurring": "August 06th, 2025"
     },
     {
         "eventName": "Out Sick - Fiona Green",
-        "startDateTime": "August 31st, 2025 at 10:00",
-        "endDateTime": "August 31st, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Out Sick - Fiona Green on August 31",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "August 31st, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "August 31st, 2025 at 11:00",
-        "endDateTime": "August 31st, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Product Demo on August 31",
-        "timeFrame": "Quarterly",
-        "endRecurring": "August 31st, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "August 31st, 2025 at 12:00",
-        "endDateTime": "August 31st, 2025 at 13:00",
+        "startDateTime": "August 06th, 2024 at 10:00",
+        "endDateTime": "August 10th, 2024 at 16:00",
         "eventType": "Networking",
-        "additionalInformation": "Details about HR Training on August 31",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 31st, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "August 31st, 2025 at 13:00",
-        "endDateTime": "August 31st, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Standup on August 31",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "August 31st, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 01st, 2025 at 09:00",
-        "endDateTime": "September 01st, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about All-Hands Meeting on September 01",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 01st, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 02nd, 2025 at 09:00",
-        "endDateTime": "September 02nd, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Project Review on September 02",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 02nd, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 02nd, 2025 at 10:00",
-        "endDateTime": "September 02nd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on September 02",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 02nd, 2026"
-    },
-    {
-        "eventName": "Out Sick - George Harris",
-        "startDateTime": "September 02nd, 2025 at 11:00",
-        "endDateTime": "September 02nd, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - George Harris on September 02",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 02nd, 2026"
-    },
-    {
-        "eventName": "PTO - Ethan Davis",
-        "startDateTime": "September 02nd, 2025 at 12:00",
-        "endDateTime": "September 02nd, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about PTO - Ethan Davis on September 02",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 02nd, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 03rd, 2025 at 09:00",
-        "endDateTime": "September 03rd, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Year-End Party on September 03",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 03rd, 2025 at 10:00",
-        "endDateTime": "September 03rd, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about 1:1 with Manager on September 03",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "September 03rd, 2025 at 11:00",
-        "endDateTime": "September 03rd, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Design Workshop on September 03",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 03rd, 2025 at 12:00",
-        "endDateTime": "September 03rd, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Budget Review on September 03",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "September 03rd, 2025 at 13:00",
-        "endDateTime": "September 03rd, 2025 at 14:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Standup on September 03",
+        "additionalInformation": "Details about Out Sick - Fiona Green from August 06 to August 10",
         "timeFrame": "BiMonthly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "September 03rd, 2025 at 14:00",
-        "endDateTime": "September 03rd, 2025 at 15:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about HR Training on September 03",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 03rd, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "September 04th, 2025 at 09:00",
-        "endDateTime": "September 04th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Team Lunch on September 04",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 04th, 2026"
+        "endRecurring": "August 06th, 2025"
     },
     {
         "eventName": "Strategy Session",
-        "startDateTime": "September 04th, 2025 at 10:00",
-        "endDateTime": "September 04th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Strategy Session on September 04",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 04th, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 04th, 2025 at 11:00",
-        "endDateTime": "September 04th, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on September 04",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 04th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 04th, 2025 at 12:00",
-        "endDateTime": "September 04th, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Project Review on September 04",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 04th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 04th, 2025 at 13:00",
-        "endDateTime": "September 04th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Budget Review on September 04",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 04th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 05th, 2025 at 09:00",
-        "endDateTime": "September 05th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about All-Hands Meeting on September 05",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 05th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 05th, 2025 at 10:00",
-        "endDateTime": "September 05th, 2025 at 11:00",
+        "startDateTime": "August 06th, 2024 at 14:00",
+        "endDateTime": "August 06th, 2024 at 16:00",
         "eventType": "Presentation",
-        "additionalInformation": "Details about 1:1 with Manager on September 05",
+        "additionalInformation": "Details about Strategy Session from August 06 to August 06",
         "timeFrame": "BiWeekly",
-        "endRecurring": "September 05th, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 05th, 2025 at 11:00",
-        "endDateTime": "September 05th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Year-End Party on September 05",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 05th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "September 05th, 2025 at 12:00",
-        "endDateTime": "September 05th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Design Workshop on September 05",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 05th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "September 05th, 2025 at 13:00",
-        "endDateTime": "September 05th, 2025 at 14:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Performance Review on September 05",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 05th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "September 05th, 2025 at 14:00",
-        "endDateTime": "September 05th, 2025 at 15:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Morning Meeting on September 05",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 05th, 2026"
+        "endRecurring": "August 06th, 2025"
     },
     {
         "eventName": "Client Call",
-        "startDateTime": "September 06th, 2025 at 09:00",
-        "endDateTime": "September 06th, 2025 at 10:00",
+        "startDateTime": "August 06th, 2024 at 09:00",
+        "endDateTime": "August 06th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Client Call from August 06 to August 06",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 06th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 07th, 2024 at 14:00",
+        "endDateTime": "August 07th, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Project Review from August 07 to August 07",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "August 07th, 2024 at 10:00",
+        "endDateTime": "August 07th, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Client Presentation from August 07 to August 07",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "PTO - Alice Smith",
+        "startDateTime": "August 07th, 2024 at 14:00",
+        "endDateTime": "August 11th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about PTO - Alice Smith from August 07 to August 11",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "August 07th, 2024 at 13:00",
+        "endDateTime": "August 07th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Code Review from August 07 to August 07",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "1:1 with Manager",
+        "startDateTime": "August 07th, 2024 at 14:00",
+        "endDateTime": "August 07th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about 1:1 with Manager from August 07 to August 07",
+        "timeFrame": "Annually",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "August 07th, 2024 at 13:00",
+        "endDateTime": "August 07th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Client Call from August 07 to August 07",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 07th, 2025"
+    },
+    {
+        "eventName": "1:1 with Manager",
+        "startDateTime": "August 08th, 2024 at 13:00",
+        "endDateTime": "August 08th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about 1:1 with Manager from August 08 to August 08",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 08th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 08th, 2024 at 12:00",
+        "endDateTime": "August 08th, 2024 at 16:00",
         "eventType": "Conference",
-        "additionalInformation": "Details about Client Call on September 06",
+        "additionalInformation": "Details about Design Workshop from August 08 to August 08",
+        "timeFrame": "Annually",
+        "endRecurring": "August 08th, 2025"
+    },
+    {
+        "eventName": "PTO - Alice Smith",
+        "startDateTime": "August 08th, 2024 at 09:00",
+        "endDateTime": "August 12th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about PTO - Alice Smith from August 08 to August 12",
         "timeFrame": "BiMonthly",
-        "endRecurring": "September 06th, 2026"
+        "endRecurring": "August 08th, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "August 09th, 2024 at 14:00",
+        "endDateTime": "August 09th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Year-End Party from August 09 to August 09",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 09th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "August 09th, 2024 at 14:00",
+        "endDateTime": "August 09th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Product Demo from August 09 to August 09",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 09th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "August 10th, 2024 at 14:00",
+        "endDateTime": "August 10th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Code Review from August 10 to August 10",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 10th, 2025"
     },
     {
         "eventName": "Quarterly Planning",
-        "startDateTime": "September 06th, 2025 at 10:00",
-        "endDateTime": "September 06th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Quarterly Planning on September 06",
+        "startDateTime": "August 10th, 2024 at 10:00",
+        "endDateTime": "August 10th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Quarterly Planning from August 10 to August 10",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 10th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Alice Smith",
+        "startDateTime": "August 10th, 2024 at 13:00",
+        "endDateTime": "August 11th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Out Sick - Alice Smith from August 10 to August 11",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 10th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "August 11th, 2024 at 10:00",
+        "endDateTime": "August 11th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Product Demo from August 11 to August 11",
+        "timeFrame": "Annually",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "August 11th, 2024 at 09:00",
+        "endDateTime": "August 11th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Standup from August 11 to August 11",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 11th, 2024 at 11:00",
+        "endDateTime": "August 11th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Project Review from August 11 to August 11",
+        "timeFrame": "Annually",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 11th, 2024 at 14:00",
+        "endDateTime": "August 11th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop from August 11 to August 11",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "August 11th, 2024 at 14:00",
+        "endDateTime": "August 11th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about All-Hands Meeting from August 11 to August 11",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Alice Smith",
+        "startDateTime": "August 11th, 2024 at 14:00",
+        "endDateTime": "August 12th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Out Sick - Alice Smith from August 11 to August 12",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 11th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "August 12th, 2024 at 09:00",
+        "endDateTime": "August 12th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Product Demo from August 12 to August 12",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 12th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 12th, 2024 at 09:00",
+        "endDateTime": "August 12th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Strategy Session from August 12 to August 12",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 12th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 12th, 2024 at 13:00",
+        "endDateTime": "August 12th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Project Review from August 12 to August 12",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 12th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 13th, 2024 at 12:00",
+        "endDateTime": "August 13th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Strategy Session from August 13 to August 13",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 13th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 14th, 2024 at 12:00",
+        "endDateTime": "August 14th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Strategy Session from August 14 to August 14",
         "timeFrame": "SemiAnnually",
-        "endRecurring": "September 06th, 2026"
+        "endRecurring": "August 14th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "August 14th, 2024 at 14:00",
+        "endDateTime": "August 14th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Morning Meeting from August 14 to August 14",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 14th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "August 15th, 2024 at 13:00",
+        "endDateTime": "August 15th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Presentation from August 15 to August 15",
+        "timeFrame": "Annually",
+        "endRecurring": "August 15th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 15th, 2024 at 14:00",
+        "endDateTime": "August 15th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from August 15 to August 15",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 15th, 2025"
     },
     {
         "eventName": "Onboarding Session",
-        "startDateTime": "September 06th, 2025 at 11:00",
-        "endDateTime": "September 06th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Onboarding Session on September 06",
+        "startDateTime": "August 16th, 2024 at 10:00",
+        "endDateTime": "August 16th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Onboarding Session from August 16 to August 16",
         "timeFrame": "Quarterly",
-        "endRecurring": "September 06th, 2026"
+        "endRecurring": "August 16th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "August 16th, 2024 at 14:00",
+        "endDateTime": "August 16th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Budget Review from August 16 to August 16",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "August 16th, 2025"
     },
     {
         "eventName": "Standup",
-        "startDateTime": "September 06th, 2025 at 12:00",
-        "endDateTime": "September 06th, 2025 at 13:00",
+        "startDateTime": "August 16th, 2024 at 14:00",
+        "endDateTime": "August 16th, 2024 at 16:00",
         "eventType": "Presentation",
-        "additionalInformation": "Details about Standup on September 06",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 06th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 06th, 2025 at 13:00",
-        "endDateTime": "September 06th, 2025 at 14:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about All-Hands Meeting on September 06",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 06th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 06th, 2025 at 14:00",
-        "endDateTime": "September 06th, 2025 at 15:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Presentation on September 06",
-        "timeFrame": "Annually",
-        "endRecurring": "September 06th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "September 07th, 2025 at 09:00",
-        "endDateTime": "September 07th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Morning Meeting on September 07",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 07th, 2025 at 10:00",
-        "endDateTime": "September 07th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about 1:1 with Manager on September 07",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "September 07th, 2025 at 11:00",
-        "endDateTime": "September 07th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Client Call on September 07",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "September 07th, 2025 at 12:00",
-        "endDateTime": "September 07th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Team Lunch on September 07",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "September 07th, 2025 at 13:00",
-        "endDateTime": "September 07th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about HR Training on September 07",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "PTO - Diana Evans",
-        "startDateTime": "September 07th, 2025 at 14:00",
-        "endDateTime": "September 07th, 2025 at 15:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about PTO - Diana Evans on September 07",
+        "additionalInformation": "Details about Standup from August 16 to August 16",
         "timeFrame": "Weekly",
-        "endRecurring": "September 07th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Hannah White",
-        "startDateTime": "September 08th, 2025 at 09:00",
-        "endDateTime": "September 08th, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Out Sick - Hannah White on September 08",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "September 08th, 2025 at 10:00",
-        "endDateTime": "September 08th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Team Lunch on September 08",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "PTO - George Harris",
-        "startDateTime": "September 08th, 2025 at 11:00",
-        "endDateTime": "September 08th, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about PTO - George Harris on September 08",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 08th, 2025 at 12:00",
-        "endDateTime": "September 08th, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Budget Review on September 08",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "September 08th, 2025 at 13:00",
-        "endDateTime": "September 08th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Design Workshop on September 08",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "September 08th, 2025 at 14:00",
-        "endDateTime": "September 08th, 2025 at 15:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Quarterly Planning on September 08",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 08th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "September 09th, 2025 at 09:00",
-        "endDateTime": "September 09th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Strategy Session on September 09",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 09th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 10th, 2025 at 09:00",
-        "endDateTime": "September 10th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about All-Hands Meeting on September 10",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 10th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "September 11th, 2025 at 09:00",
-        "endDateTime": "September 11th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about HR Training on September 11",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 11th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 11th, 2025 at 10:00",
-        "endDateTime": "September 11th, 2025 at 11:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Budget Review on September 11",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 11th, 2026"
+        "endRecurring": "August 16th, 2025"
     },
     {
         "eventName": "Project Review",
-        "startDateTime": "September 11th, 2025 at 11:00",
-        "endDateTime": "September 11th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Project Review on September 11",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 11th, 2026"
-    },
-    {
-        "eventName": "PTO - Charlie Brown",
-        "startDateTime": "September 11th, 2025 at 12:00",
-        "endDateTime": "September 11th, 2025 at 13:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about PTO - Charlie Brown on September 11",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 11th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 11th, 2025 at 13:00",
-        "endDateTime": "September 11th, 2025 at 14:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about All-Hands Meeting on September 11",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 11th, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "September 12th, 2025 at 09:00",
-        "endDateTime": "September 12th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Strategy Session on September 12",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 12th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Bob Johnson",
-        "startDateTime": "September 12th, 2025 at 10:00",
-        "endDateTime": "September 12th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Out Sick - Bob Johnson on September 12",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 12th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "September 13th, 2025 at 09:00",
-        "endDateTime": "September 13th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about HR Training on September 13",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 13th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 14th, 2025 at 09:00",
-        "endDateTime": "September 14th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Client Presentation on September 14",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 14th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 14th, 2025 at 10:00",
-        "endDateTime": "September 14th, 2025 at 11:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about 1:1 with Manager on September 14",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 14th, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 15th, 2025 at 09:00",
-        "endDateTime": "September 15th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about All-Hands Meeting on September 15",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 15th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 15th, 2025 at 10:00",
-        "endDateTime": "September 15th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on September 15",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 15th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "September 16th, 2025 at 09:00",
-        "endDateTime": "September 16th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Design Workshop on September 16",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 16th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 16th, 2025 at 10:00",
-        "endDateTime": "September 16th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Budget Review on September 16",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 16th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 16th, 2025 at 11:00",
-        "endDateTime": "September 16th, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about 1:1 with Manager on September 16",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 16th, 2026"
-    },
-    {
-        "eventName": "PTO - Fiona Green",
-        "startDateTime": "September 16th, 2025 at 12:00",
-        "endDateTime": "September 16th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about PTO - Fiona Green on September 16",
-        "timeFrame": "Annually",
-        "endRecurring": "September 16th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 17th, 2025 at 09:00",
-        "endDateTime": "September 17th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about 1:1 with Manager on September 17",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 17th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 17th, 2025 at 10:00",
-        "endDateTime": "September 17th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Client Presentation on September 17",
-        "timeFrame": "Annually",
-        "endRecurring": "September 17th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "September 17th, 2025 at 11:00",
-        "endDateTime": "September 17th, 2025 at 12:00",
+        "startDateTime": "August 17th, 2024 at 14:00",
+        "endDateTime": "August 17th, 2024 at 18:00",
         "eventType": "Presentation",
-        "additionalInformation": "Details about Code Review on September 17",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 17th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 17th, 2025 at 12:00",
-        "endDateTime": "September 17th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Product Demo on September 17",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 17th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "September 17th, 2025 at 13:00",
-        "endDateTime": "September 17th, 2025 at 14:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Team Lunch on September 17",
-        "timeFrame": "Annually",
-        "endRecurring": "September 17th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 18th, 2025 at 09:00",
-        "endDateTime": "September 18th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Budget Review on September 18",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 18th, 2026"
-    },
-    {
-        "eventName": "HR Training",
-        "startDateTime": "September 18th, 2025 at 10:00",
-        "endDateTime": "September 18th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about HR Training on September 18",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 18th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "September 18th, 2025 at 11:00",
-        "endDateTime": "September 18th, 2025 at 12:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Code Review on September 18",
-        "timeFrame": "Annually",
-        "endRecurring": "September 18th, 2026"
-    },
-    {
-        "eventName": "Performance Review",
-        "startDateTime": "September 18th, 2025 at 12:00",
-        "endDateTime": "September 18th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Performance Review on September 18",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 18th, 2026"
-    },
-    {
-        "eventName": "1:1 with Manager",
-        "startDateTime": "September 18th, 2025 at 13:00",
-        "endDateTime": "September 18th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about 1:1 with Manager on September 18",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 18th, 2026"
-    },
-    {
-        "eventName": "Team Lunch",
-        "startDateTime": "September 19th, 2025 at 09:00",
-        "endDateTime": "September 19th, 2025 at 10:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Team Lunch on September 19",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 19th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 19th, 2025 at 10:00",
-        "endDateTime": "September 19th, 2025 at 11:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Product Demo on September 19",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 19th, 2026"
-    },
-    {
-        "eventName": "PTO - Bob Johnson",
-        "startDateTime": "September 19th, 2025 at 11:00",
-        "endDateTime": "September 19th, 2025 at 12:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about PTO - Bob Johnson on September 19",
-        "timeFrame": "Annually",
-        "endRecurring": "September 19th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 19th, 2025 at 12:00",
-        "endDateTime": "September 19th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Project Review on September 19",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 19th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "September 19th, 2025 at 13:00",
-        "endDateTime": "September 19th, 2025 at 14:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Client Call on September 19",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 19th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 20th, 2025 at 09:00",
-        "endDateTime": "September 20th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Client Presentation on September 20",
-        "timeFrame": "Annually",
-        "endRecurring": "September 20th, 2026"
-    },
-    {
-        "eventName": "Budget Review",
-        "startDateTime": "September 21st, 2025 at 09:00",
-        "endDateTime": "September 21st, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Budget Review on September 21",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 21st, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "September 21st, 2025 at 10:00",
-        "endDateTime": "September 21st, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Standup on September 21",
+        "additionalInformation": "Details about Project Review from August 17 to August 17",
         "timeFrame": "BiMonthly",
-        "endRecurring": "September 21st, 2026"
+        "endRecurring": "August 17th, 2025"
     },
     {
-        "eventName": "Morning Meeting",
-        "startDateTime": "September 21st, 2025 at 11:00",
-        "endDateTime": "September 21st, 2025 at 12:00",
+        "eventName": "Standup",
+        "startDateTime": "August 17th, 2024 at 09:00",
+        "endDateTime": "August 17th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Standup from August 17 to August 17",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 17th, 2025"
+    },
+    {
+        "eventName": "PTO - Hannah White",
+        "startDateTime": "August 17th, 2024 at 13:00",
+        "endDateTime": "August 19th, 2024 at 16:00",
         "eventType": "Workshop",
-        "additionalInformation": "Details about Morning Meeting on September 21",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 21st, 2026"
+        "additionalInformation": "Details about PTO - Hannah White from August 17 to August 19",
+        "timeFrame": "Annually",
+        "endRecurring": "August 17th, 2025"
     },
     {
         "eventName": "Out Sick - Ethan Davis",
-        "startDateTime": "September 21st, 2025 at 12:00",
-        "endDateTime": "September 21st, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - Ethan Davis on September 21",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 21st, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "September 21st, 2025 at 13:00",
-        "endDateTime": "September 21st, 2025 at 14:00",
+        "startDateTime": "August 17th, 2024 at 13:00",
+        "endDateTime": "August 21st, 2024 at 16:00",
         "eventType": "Presentation",
-        "additionalInformation": "Details about Strategy Session on September 21",
-        "timeFrame": "Annually",
-        "endRecurring": "September 21st, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 21st, 2025 at 14:00",
-        "endDateTime": "September 21st, 2025 at 15:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Project Review on September 21",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 21st, 2026"
-    },
-    {
-        "eventName": "Strategy Session",
-        "startDateTime": "September 22nd, 2025 at 09:00",
-        "endDateTime": "September 22nd, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Strategy Session on September 22",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 22nd, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 22nd, 2025 at 10:00",
-        "endDateTime": "September 22nd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on September 22",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 22nd, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 23rd, 2025 at 09:00",
-        "endDateTime": "September 23rd, 2025 at 10:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Product Demo on September 23",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "Out Sick - Bob Johnson",
-        "startDateTime": "September 23rd, 2025 at 10:00",
-        "endDateTime": "September 23rd, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Out Sick - Bob Johnson on September 23",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 23rd, 2025 at 11:00",
-        "endDateTime": "September 23rd, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Project Review on September 23",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 23rd, 2025 at 12:00",
-        "endDateTime": "September 23rd, 2025 at 13:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Client Presentation on September 23",
+        "additionalInformation": "Details about Out Sick - Ethan Davis from August 17 to August 21",
         "timeFrame": "BiWeekly",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "All-Hands Meeting",
-        "startDateTime": "September 23rd, 2025 at 13:00",
-        "endDateTime": "September 23rd, 2025 at 14:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about All-Hands Meeting on September 23",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "September 23rd, 2025 at 14:00",
-        "endDateTime": "September 23rd, 2025 at 15:00",
-        "eventType": "Workshop",
-        "additionalInformation": "Details about Onboarding Session on September 23",
-        "timeFrame": "Annually",
-        "endRecurring": "September 23rd, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "September 24th, 2025 at 09:00",
-        "endDateTime": "September 24th, 2025 at 10:00",
-        "eventType": "Networking",
-        "additionalInformation": "Details about Code Review on September 24",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 24th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 24th, 2025 at 10:00",
-        "endDateTime": "September 24th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Project Review on September 24",
-        "timeFrame": "Annually",
-        "endRecurring": "September 24th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "September 24th, 2025 at 11:00",
-        "endDateTime": "September 24th, 2025 at 12:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Quarterly Planning on September 24",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 24th, 2026"
-    },
-    {
-        "eventName": "Onboarding Session",
-        "startDateTime": "September 25th, 2025 at 09:00",
-        "endDateTime": "September 25th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Onboarding Session on September 25",
-        "timeFrame": "BiWeekly",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Year-End Party",
-        "startDateTime": "September 25th, 2025 at 10:00",
-        "endDateTime": "September 25th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Year-End Party on September 25",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Out Sick - Diana Evans",
-        "startDateTime": "September 25th, 2025 at 11:00",
-        "endDateTime": "September 25th, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Out Sick - Diana Evans on September 25",
-        "timeFrame": "BiMonthly",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 25th, 2025 at 12:00",
-        "endDateTime": "September 25th, 2025 at 13:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Product Demo on September 25",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 25th, 2025 at 13:00",
-        "endDateTime": "September 25th, 2025 at 14:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Client Presentation on September 25",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Project Review",
-        "startDateTime": "September 25th, 2025 at 14:00",
-        "endDateTime": "September 25th, 2025 at 15:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Project Review on September 25",
-        "timeFrame": "SemiAnnually",
-        "endRecurring": "September 25th, 2026"
-    },
-    {
-        "eventName": "Standup",
-        "startDateTime": "September 26th, 2025 at 09:00",
-        "endDateTime": "September 26th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Standup on September 26",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 26th, 2026"
-    },
-    {
-        "eventName": "Code Review",
-        "startDateTime": "September 26th, 2025 at 10:00",
-        "endDateTime": "September 26th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Code Review on September 26",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 26th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 27th, 2025 at 09:00",
-        "endDateTime": "September 27th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Product Demo on September 27",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 27th, 2026"
-    },
-    {
-        "eventName": "Client Call",
-        "startDateTime": "September 27th, 2025 at 10:00",
-        "endDateTime": "September 27th, 2025 at 11:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Client Call on September 27",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 27th, 2026"
-    },
-    {
-        "eventName": "Morning Meeting",
-        "startDateTime": "September 28th, 2025 at 09:00",
-        "endDateTime": "September 28th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Morning Meeting on September 28",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 28th, 2026"
-    },
-    {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "September 28th, 2025 at 10:00",
-        "endDateTime": "September 28th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Quarterly Planning on September 28",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 28th, 2026"
-    },
-    {
-        "eventName": "Client Presentation",
-        "startDateTime": "September 28th, 2025 at 11:00",
-        "endDateTime": "September 28th, 2025 at 12:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Client Presentation on September 28",
-        "timeFrame": "DailyEveryday",
-        "endRecurring": "September 28th, 2026"
-    },
-    {
-        "eventName": "PTO - Fiona Green",
-        "startDateTime": "September 28th, 2025 at 12:00",
-        "endDateTime": "September 28th, 2025 at 13:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about PTO - Fiona Green on September 28",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 28th, 2026"
-    },
-    {
-        "eventName": "Product Demo",
-        "startDateTime": "September 29th, 2025 at 09:00",
-        "endDateTime": "September 29th, 2025 at 10:00",
-        "eventType": "Conference",
-        "additionalInformation": "Details about Product Demo on September 29",
-        "timeFrame": "Weekly",
-        "endRecurring": "September 29th, 2026"
-    },
-    {
-        "eventName": "Design Workshop",
-        "startDateTime": "September 30th, 2025 at 09:00",
-        "endDateTime": "September 30th, 2025 at 10:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Design Workshop on September 30",
-        "timeFrame": "DailyWeekday",
-        "endRecurring": "September 30th, 2026"
+        "endRecurring": "August 17th, 2025"
     },
     {
         "eventName": "Budget Review",
-        "startDateTime": "September 30th, 2025 at 10:00",
-        "endDateTime": "September 30th, 2025 at 11:00",
-        "eventType": "Presentation",
-        "additionalInformation": "Details about Budget Review on September 30",
-        "timeFrame": "Monthly",
-        "endRecurring": "September 30th, 2026"
+        "startDateTime": "August 17th, 2024 at 09:00",
+        "endDateTime": "August 17th, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Budget Review from August 17 to August 17",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 17th, 2025"
     },
     {
-        "eventName": "Quarterly Planning",
-        "startDateTime": "September 30th, 2025 at 11:00",
-        "endDateTime": "September 30th, 2025 at 12:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Quarterly Planning on September 30",
-        "timeFrame": "Quarterly",
-        "endRecurring": "September 30th, 2026"
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "August 18th, 2024 at 10:00",
+        "endDateTime": "August 18th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about All-Hands Meeting from August 18 to August 18",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 18th, 2025"
     },
     {
         "eventName": "Morning Meeting",
-        "startDateTime": "September 30th, 2025 at 12:00",
-        "endDateTime": "September 30th, 2025 at 13:00",
-        "eventType": "Review",
-        "additionalInformation": "Details about Morning Meeting on September 30",
+        "startDateTime": "August 18th, 2024 at 10:00",
+        "endDateTime": "August 18th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Morning Meeting from August 18 to August 18",
         "timeFrame": "BiMonthly",
-        "endRecurring": "September 30th, 2026"
+        "endRecurring": "August 18th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 18th, 2024 at 14:00",
+        "endDateTime": "August 18th, 2024 at 17:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Project Review from August 18 to August 18",
+        "timeFrame": "Annually",
+        "endRecurring": "August 18th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "August 18th, 2024 at 09:00",
+        "endDateTime": "August 18th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Presentation from August 18 to August 18",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 18th, 2025"
+    },
+    {
+        "eventName": "PTO - Diana Evans",
+        "startDateTime": "August 18th, 2024 at 13:00",
+        "endDateTime": "August 19th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about PTO - Diana Evans from August 18 to August 19",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 18th, 2025"
+    },
+    {
+        "eventName": "Performance Review",
+        "startDateTime": "August 19th, 2024 at 11:00",
+        "endDateTime": "August 19th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Performance Review from August 19 to August 19",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 19th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "August 20th, 2024 at 12:00",
+        "endDateTime": "August 20th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Presentation from August 20 to August 20",
+        "timeFrame": "Annually",
+        "endRecurring": "August 20th, 2025"
+    },
+    {
+        "eventName": "Quarterly Planning",
+        "startDateTime": "August 20th, 2024 at 09:00",
+        "endDateTime": "August 20th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Quarterly Planning from August 20 to August 20",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 20th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "August 20th, 2024 at 10:00",
+        "endDateTime": "August 21st, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about HR Training from August 20 to August 21",
+        "timeFrame": "Annually",
+        "endRecurring": "August 20th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Diana Evans",
+        "startDateTime": "August 20th, 2024 at 13:00",
+        "endDateTime": "August 21st, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Out Sick - Diana Evans from August 20 to August 21",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 20th, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "August 21st, 2024 at 09:00",
+        "endDateTime": "August 21st, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Standup from August 21 to August 21",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 21st, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "August 21st, 2024 at 11:00",
+        "endDateTime": "August 21st, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Morning Meeting from August 21 to August 21",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 21st, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 21st, 2024 at 14:00",
+        "endDateTime": "August 21st, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Project Review from August 21 to August 21",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 21st, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "August 21st, 2024 at 13:00",
+        "endDateTime": "August 21st, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Budget Review from August 21 to August 21",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 21st, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "August 21st, 2024 at 12:00",
+        "endDateTime": "August 21st, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about All-Hands Meeting from August 21 to August 21",
+        "timeFrame": "Annually",
+        "endRecurring": "August 21st, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "August 22nd, 2024 at 10:00",
+        "endDateTime": "August 22nd, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Year-End Party from August 22 to August 22",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 22nd, 2025"
+    },
+    {
+        "eventName": "Out Sick - Ethan Davis",
+        "startDateTime": "August 22nd, 2024 at 09:00",
+        "endDateTime": "August 26th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Out Sick - Ethan Davis from August 22 to August 26",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 22nd, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "August 22nd, 2024 at 12:00",
+        "endDateTime": "August 22nd, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call from August 22 to August 22",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "August 22nd, 2025"
+    },
+    {
+        "eventName": "PTO - Hannah White",
+        "startDateTime": "August 22nd, 2024 at 12:00",
+        "endDateTime": "August 23rd, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about PTO - Hannah White from August 22 to August 23",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 22nd, 2025"
+    },
+    {
+        "eventName": "Out Sick - Bob Johnson",
+        "startDateTime": "August 23rd, 2024 at 11:00",
+        "endDateTime": "August 25th, 2024 at 17:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Out Sick - Bob Johnson from August 23 to August 25",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "August 23rd, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "August 23rd, 2024 at 14:00",
+        "endDateTime": "August 23rd, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review from August 23 to August 23",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 23rd, 2025"
+    },
+    {
+        "eventName": "Performance Review",
+        "startDateTime": "August 23rd, 2024 at 14:00",
+        "endDateTime": "August 23rd, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Performance Review from August 23 to August 23",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 23rd, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 23rd, 2024 at 12:00",
+        "endDateTime": "August 23rd, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from August 23 to August 23",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 23rd, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "August 23rd, 2024 at 09:00",
+        "endDateTime": "August 23rd, 2024 at 15:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Standup from August 23 to August 23",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 23rd, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "August 24th, 2024 at 09:00",
+        "endDateTime": "August 25th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about HR Training from August 24 to August 25",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 24th, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "August 24th, 2024 at 10:00",
+        "endDateTime": "August 24th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Team Lunch from August 24 to August 24",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "August 24th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 24th, 2024 at 13:00",
+        "endDateTime": "August 24th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop from August 24 to August 24",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 24th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "August 24th, 2024 at 12:00",
+        "endDateTime": "August 24th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Project Review from August 24 to August 24",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 24th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "August 25th, 2024 at 13:00",
+        "endDateTime": "August 25th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Morning Meeting from August 25 to August 25",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 25th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 26th, 2024 at 14:00",
+        "endDateTime": "August 26th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Design Workshop from August 26 to August 26",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 26th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "August 26th, 2024 at 12:00",
+        "endDateTime": "August 29th, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about HR Training from August 26 to August 29",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "August 26th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "August 26th, 2024 at 10:00",
+        "endDateTime": "August 26th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Onboarding Session from August 26 to August 26",
+        "timeFrame": "Weekly",
+        "endRecurring": "August 26th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "August 26th, 2024 at 10:00",
+        "endDateTime": "August 26th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Call from August 26 to August 26",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 26th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 27th, 2024 at 09:00",
+        "endDateTime": "August 27th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Strategy Session from August 27 to August 27",
+        "timeFrame": "Annually",
+        "endRecurring": "August 27th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "August 28th, 2024 at 12:00",
+        "endDateTime": "August 28th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Morning Meeting from August 28 to August 28",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 28th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Fiona Green",
+        "startDateTime": "August 28th, 2024 at 12:00",
+        "endDateTime": "August 30th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Out Sick - Fiona Green from August 28 to August 30",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "August 28th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 28th, 2024 at 10:00",
+        "endDateTime": "August 28th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from August 28 to August 28",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 28th, 2025"
+    },
+    {
+        "eventName": "1:1 with Manager",
+        "startDateTime": "August 28th, 2024 at 11:00",
+        "endDateTime": "August 28th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about 1:1 with Manager from August 28 to August 28",
+        "timeFrame": "Annually",
+        "endRecurring": "August 28th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "August 29th, 2024 at 14:00",
+        "endDateTime": "August 29th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review from August 29 to August 29",
+        "timeFrame": "Monthly",
+        "endRecurring": "August 29th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "August 29th, 2024 at 11:00",
+        "endDateTime": "August 29th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Budget Review from August 29 to August 29",
+        "timeFrame": "Annually",
+        "endRecurring": "August 29th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "August 29th, 2024 at 11:00",
+        "endDateTime": "August 29th, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Design Workshop from August 29 to August 29",
+        "timeFrame": "Annually",
+        "endRecurring": "August 29th, 2025"
+    },
+    {
+        "eventName": "Quarterly Planning",
+        "startDateTime": "August 30th, 2024 at 11:00",
+        "endDateTime": "August 30th, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Quarterly Planning from August 30 to August 30",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 30th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "August 30th, 2024 at 13:00",
+        "endDateTime": "August 30th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review from August 30 to August 30",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 30th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "August 31st, 2024 at 12:00",
+        "endDateTime": "August 31st, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Strategy Session from August 31 to August 31",
+        "timeFrame": "Quarterly",
+        "endRecurring": "August 31st, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "September 01st, 2024 at 12:00",
+        "endDateTime": "September 01st, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Product Demo from September 01 to September 01",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 01st, 2025"
+    },
+    {
+        "eventName": "PTO - Diana Evans",
+        "startDateTime": "September 01st, 2024 at 13:00",
+        "endDateTime": "September 05th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about PTO - Diana Evans from September 01 to September 05",
+        "timeFrame": "Annually",
+        "endRecurring": "September 01st, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 01st, 2024 at 09:00",
+        "endDateTime": "September 01st, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Call from September 01 to September 01",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 01st, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 01st, 2024 at 09:00",
+        "endDateTime": "September 01st, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from September 01 to September 01",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 01st, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "September 02nd, 2024 at 14:00",
+        "endDateTime": "September 02nd, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Standup from September 02 to September 02",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 02nd, 2025"
+    },
+    {
+        "eventName": "Out Sick - Bob Johnson",
+        "startDateTime": "September 02nd, 2024 at 09:00",
+        "endDateTime": "September 03rd, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Out Sick - Bob Johnson from September 02 to September 03",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 02nd, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 02nd, 2024 at 09:00",
+        "endDateTime": "September 04th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about HR Training from September 02 to September 04",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 02nd, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 02nd, 2024 at 10:00",
+        "endDateTime": "September 02nd, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Client Presentation from September 02 to September 02",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 02nd, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "September 02nd, 2024 at 09:00",
+        "endDateTime": "September 02nd, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Year-End Party from September 02 to September 02",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 02nd, 2025"
+    },
+    {
+        "eventName": "Out Sick - Bob Johnson",
+        "startDateTime": "September 03rd, 2024 at 09:00",
+        "endDateTime": "September 06th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Out Sick - Bob Johnson from September 03 to September 06",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 03rd, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 03rd, 2024 at 11:00",
+        "endDateTime": "September 03rd, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call from September 03 to September 03",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 03rd, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "September 04th, 2024 at 11:00",
+        "endDateTime": "September 04th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about All-Hands Meeting from September 04 to September 04",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "September 04th, 2024 at 13:00",
+        "endDateTime": "September 04th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Morning Meeting from September 04 to September 04",
+        "timeFrame": "Annually",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 04th, 2024 at 12:00",
+        "endDateTime": "September 07th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about HR Training from September 04 to September 07",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "September 04th, 2024 at 12:00",
+        "endDateTime": "September 04th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Strategy Session from September 04 to September 04",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "PTO - Diana Evans",
+        "startDateTime": "September 04th, 2024 at 10:00",
+        "endDateTime": "September 05th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about PTO - Diana Evans from September 04 to September 05",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "September 04th, 2024 at 12:00",
+        "endDateTime": "September 04th, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Onboarding Session from September 04 to September 04",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 04th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "September 05th, 2024 at 09:00",
+        "endDateTime": "September 05th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Budget Review from September 05 to September 05",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "September 05th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 05th, 2024 at 13:00",
+        "endDateTime": "September 05th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Design Workshop from September 05 to September 05",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 05th, 2025"
+    },
+    {
+        "eventName": "Out Sick - George Harris",
+        "startDateTime": "September 05th, 2024 at 09:00",
+        "endDateTime": "September 08th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Out Sick - George Harris from September 05 to September 08",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 05th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "September 05th, 2024 at 12:00",
+        "endDateTime": "September 05th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Onboarding Session from September 05 to September 05",
+        "timeFrame": "Annually",
+        "endRecurring": "September 05th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "September 05th, 2024 at 10:00",
+        "endDateTime": "September 05th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Code Review from September 05 to September 05",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 05th, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "September 06th, 2024 at 12:00",
+        "endDateTime": "September 06th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Team Lunch from September 06 to September 06",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 06th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "September 07th, 2024 at 10:00",
+        "endDateTime": "September 07th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Product Demo from September 07 to September 07",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 07th, 2025"
+    },
+    {
+        "eventName": "Quarterly Planning",
+        "startDateTime": "September 07th, 2024 at 09:00",
+        "endDateTime": "September 07th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Quarterly Planning from September 07 to September 07",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 07th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "September 08th, 2024 at 14:00",
+        "endDateTime": "September 08th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Strategy Session from September 08 to September 08",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 08th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 08th, 2024 at 14:00",
+        "endDateTime": "September 08th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Call from September 08 to September 08",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 08th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "September 09th, 2024 at 10:00",
+        "endDateTime": "September 09th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Morning Meeting from September 09 to September 09",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 09th, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "September 10th, 2024 at 14:00",
+        "endDateTime": "September 10th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Team Lunch from September 10 to September 10",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 10th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 10th, 2024 at 14:00",
+        "endDateTime": "September 14th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about HR Training from September 10 to September 14",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 10th, 2025"
+    },
+    {
+        "eventName": "Morning Meeting",
+        "startDateTime": "September 10th, 2024 at 12:00",
+        "endDateTime": "September 10th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Morning Meeting from September 10 to September 10",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 10th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 10th, 2024 at 09:00",
+        "endDateTime": "September 10th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Client Presentation from September 10 to September 10",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 10th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Hannah White",
+        "startDateTime": "September 10th, 2024 at 10:00",
+        "endDateTime": "September 11th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Out Sick - Hannah White from September 10 to September 11",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 10th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 11th, 2024 at 09:00",
+        "endDateTime": "September 11th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Design Workshop from September 11 to September 11",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "September 11th, 2024 at 10:00",
+        "endDateTime": "September 11th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Product Demo from September 11 to September 11",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "Performance Review",
+        "startDateTime": "September 11th, 2024 at 10:00",
+        "endDateTime": "September 11th, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Performance Review from September 11 to September 11",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "September 11th, 2024 at 13:00",
+        "endDateTime": "September 11th, 2024 at 15:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Team Lunch from September 11 to September 11",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "September 11th, 2024 at 11:00",
+        "endDateTime": "September 11th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Onboarding Session from September 11 to September 11",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "1:1 with Manager",
+        "startDateTime": "September 11th, 2024 at 10:00",
+        "endDateTime": "September 11th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about 1:1 with Manager from September 11 to September 11",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 11th, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "September 12th, 2024 at 13:00",
+        "endDateTime": "September 12th, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about All-Hands Meeting from September 12 to September 12",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 12th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "September 12th, 2024 at 12:00",
+        "endDateTime": "September 12th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Budget Review from September 12 to September 12",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 12th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "September 13th, 2024 at 10:00",
+        "endDateTime": "September 13th, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Budget Review from September 13 to September 13",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 13th, 2024 at 12:00",
+        "endDateTime": "September 13th, 2024 at 16:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Design Workshop from September 13 to September 13",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "September 13th, 2024 at 09:00",
+        "endDateTime": "September 13th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Standup from September 13 to September 13",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "September 13th, 2024 at 13:00",
+        "endDateTime": "September 13th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Project Review from September 13 to September 13",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 13th, 2024 at 14:00",
+        "endDateTime": "September 13th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Client Call from September 13 to September 13",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Strategy Session",
+        "startDateTime": "September 13th, 2024 at 10:00",
+        "endDateTime": "September 13th, 2024 at 18:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Strategy Session from September 13 to September 13",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 13th, 2025"
+    },
+    {
+        "eventName": "Quarterly Planning",
+        "startDateTime": "September 14th, 2024 at 13:00",
+        "endDateTime": "September 14th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Quarterly Planning from September 14 to September 14",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 14th, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "September 14th, 2024 at 13:00",
+        "endDateTime": "September 14th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Year-End Party from September 14 to September 14",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 14th, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "September 15th, 2024 at 11:00",
+        "endDateTime": "September 15th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about All-Hands Meeting from September 15 to September 15",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 15th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 15th, 2024 at 13:00",
+        "endDateTime": "September 16th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about HR Training from September 15 to September 16",
+        "timeFrame": "Annually",
+        "endRecurring": "September 15th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "September 15th, 2024 at 11:00",
+        "endDateTime": "September 15th, 2024 at 17:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Project Review from September 15 to September 15",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 15th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "September 16th, 2024 at 09:00",
+        "endDateTime": "September 16th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Budget Review from September 16 to September 16",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 16th, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "September 16th, 2024 at 12:00",
+        "endDateTime": "September 16th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Year-End Party from September 16 to September 16",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 16th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 17th, 2024 at 14:00",
+        "endDateTime": "September 17th, 2024 at 18:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Presentation from September 17 to September 17",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 17th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "September 17th, 2024 at 10:00",
+        "endDateTime": "September 17th, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Onboarding Session from September 17 to September 17",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 17th, 2025"
+    },
+    {
+        "eventName": "Performance Review",
+        "startDateTime": "September 17th, 2024 at 10:00",
+        "endDateTime": "September 17th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Performance Review from September 17 to September 17",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 17th, 2025"
+    },
+    {
+        "eventName": "All-Hands Meeting",
+        "startDateTime": "September 17th, 2024 at 14:00",
+        "endDateTime": "September 17th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about All-Hands Meeting from September 17 to September 17",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 17th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "September 18th, 2024 at 10:00",
+        "endDateTime": "September 18th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Code Review from September 18 to September 18",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 18th, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "September 19th, 2024 at 12:00",
+        "endDateTime": "September 19th, 2024 at 15:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Year-End Party from September 19 to September 19",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 19th, 2025"
+    },
+    {
+        "eventName": "Out Sick - Charlie Brown",
+        "startDateTime": "September 20th, 2024 at 11:00",
+        "endDateTime": "September 24th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Out Sick - Charlie Brown from September 20 to September 24",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 20th, 2025"
+    },
+    {
+        "eventName": "Quarterly Planning",
+        "startDateTime": "September 21st, 2024 at 09:00",
+        "endDateTime": "September 21st, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Quarterly Planning from September 21 to September 21",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 21st, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "September 21st, 2024 at 09:00",
+        "endDateTime": "September 21st, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Team Lunch from September 21 to September 21",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 21st, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 22nd, 2024 at 13:00",
+        "endDateTime": "September 22nd, 2024 at 16:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from September 22 to September 22",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 22nd, 2025"
+    },
+    {
+        "eventName": "PTO - Hannah White",
+        "startDateTime": "September 22nd, 2024 at 09:00",
+        "endDateTime": "September 24th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about PTO - Hannah White from September 22 to September 24",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "September 22nd, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "September 22nd, 2024 at 10:00",
+        "endDateTime": "September 22nd, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Standup from September 22 to September 22",
+        "timeFrame": "Annually",
+        "endRecurring": "September 22nd, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 22nd, 2024 at 12:00",
+        "endDateTime": "September 22nd, 2024 at 17:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Client Presentation from September 22 to September 22",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 22nd, 2025"
+    },
+    {
+        "eventName": "PTO - Diana Evans",
+        "startDateTime": "September 23rd, 2024 at 14:00",
+        "endDateTime": "September 24th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about PTO - Diana Evans from September 23 to September 24",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 23rd, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "September 23rd, 2024 at 13:00",
+        "endDateTime": "September 23rd, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Standup from September 23 to September 23",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 23rd, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 23rd, 2024 at 12:00",
+        "endDateTime": "September 23rd, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from September 23 to September 23",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 23rd, 2025"
+    },
+    {
+        "eventName": "Out Sick - George Harris",
+        "startDateTime": "September 24th, 2024 at 14:00",
+        "endDateTime": "September 28th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Out Sick - George Harris from September 24 to September 28",
+        "timeFrame": "BiWeekly",
+        "endRecurring": "September 24th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 24th, 2024 at 14:00",
+        "endDateTime": "September 24th, 2024 at 15:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Design Workshop from September 24 to September 24",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 24th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 24th, 2024 at 12:00",
+        "endDateTime": "September 24th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Client Call from September 24 to September 24",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 24th, 2025"
+    },
+    {
+        "eventName": "Onboarding Session",
+        "startDateTime": "September 24th, 2024 at 11:00",
+        "endDateTime": "September 24th, 2024 at 15:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Onboarding Session from September 24 to September 24",
+        "timeFrame": "Annually",
+        "endRecurring": "September 24th, 2025"
+    },
+    {
+        "eventName": "Budget Review",
+        "startDateTime": "September 25th, 2024 at 09:00",
+        "endDateTime": "September 25th, 2024 at 16:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Budget Review from September 25 to September 25",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 25th, 2025"
+    },
+    {
+        "eventName": "Year-End Party",
+        "startDateTime": "September 25th, 2024 at 12:00",
+        "endDateTime": "September 25th, 2024 at 18:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Year-End Party from September 25 to September 25",
+        "timeFrame": "Weekly",
+        "endRecurring": "September 25th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "September 25th, 2024 at 09:00",
+        "endDateTime": "September 25th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Project Review from September 25 to September 25",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 25th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "September 25th, 2024 at 09:00",
+        "endDateTime": "September 25th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Code Review from September 25 to September 25",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 25th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 26th, 2024 at 10:00",
+        "endDateTime": "September 26th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Design Workshop from September 26 to September 26",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 26th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "September 26th, 2024 at 09:00",
+        "endDateTime": "September 26th, 2024 at 15:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Code Review from September 26 to September 26",
+        "timeFrame": "Annually",
+        "endRecurring": "September 26th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "September 27th, 2024 at 14:00",
+        "endDateTime": "September 27th, 2024 at 16:00",
+        "eventType": "Presentation",
+        "additionalInformation": "Details about Project Review from September 27 to September 27",
+        "timeFrame": "Annually",
+        "endRecurring": "September 27th, 2025"
+    },
+    {
+        "eventName": "Standup",
+        "startDateTime": "September 27th, 2024 at 09:00",
+        "endDateTime": "September 27th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Standup from September 27 to September 27",
+        "timeFrame": "Quarterly",
+        "endRecurring": "September 27th, 2025"
+    },
+    {
+        "eventName": "Team Lunch",
+        "startDateTime": "September 27th, 2024 at 11:00",
+        "endDateTime": "September 27th, 2024 at 15:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Team Lunch from September 27 to September 27",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 27th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 27th, 2024 at 09:00",
+        "endDateTime": "October 01st, 2024 at 17:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about HR Training from September 27 to October 01",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 27th, 2025"
+    },
+    {
+        "eventName": "Project Review",
+        "startDateTime": "September 28th, 2024 at 14:00",
+        "endDateTime": "September 28th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Project Review from September 28 to September 28",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 28th, 2025"
+    },
+    {
+        "eventName": "Product Demo",
+        "startDateTime": "September 28th, 2024 at 14:00",
+        "endDateTime": "September 28th, 2024 at 18:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about Product Demo from September 28 to September 28",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 28th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 28th, 2024 at 12:00",
+        "endDateTime": "September 28th, 2024 at 17:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Presentation from September 28 to September 28",
+        "timeFrame": "Monthly",
+        "endRecurring": "September 28th, 2025"
+    },
+    {
+        "eventName": "Performance Review",
+        "startDateTime": "September 28th, 2024 at 11:00",
+        "endDateTime": "September 28th, 2024 at 17:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Performance Review from September 28 to September 28",
+        "timeFrame": "DailyWeekday",
+        "endRecurring": "September 28th, 2025"
+    },
+    {
+        "eventName": "HR Training",
+        "startDateTime": "September 29th, 2024 at 11:00",
+        "endDateTime": "September 30th, 2024 at 17:00",
+        "eventType": "Workshop",
+        "additionalInformation": "Details about HR Training from September 29 to September 30",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 29th, 2025"
+    },
+    {
+        "eventName": "Code Review",
+        "startDateTime": "September 29th, 2024 at 13:00",
+        "endDateTime": "September 29th, 2024 at 18:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Code Review from September 29 to September 29",
+        "timeFrame": "SemiAnnually",
+        "endRecurring": "September 29th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 29th, 2024 at 14:00",
+        "endDateTime": "September 29th, 2024 at 15:00",
+        "eventType": "Review",
+        "additionalInformation": "Details about Client Presentation from September 29 to September 29",
+        "timeFrame": "DailyEveryday",
+        "endRecurring": "September 29th, 2025"
+    },
+    {
+        "eventName": "Design Workshop",
+        "startDateTime": "September 29th, 2024 at 12:00",
+        "endDateTime": "September 29th, 2024 at 17:00",
+        "eventType": "Networking",
+        "additionalInformation": "Details about Design Workshop from September 29 to September 29",
+        "timeFrame": "BiMonthly",
+        "endRecurring": "September 29th, 2025"
+    },
+    {
+        "eventName": "Client Call",
+        "startDateTime": "September 29th, 2024 at 09:00",
+        "endDateTime": "September 29th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Call from September 29 to September 29",
+        "timeFrame": "Annually",
+        "endRecurring": "September 29th, 2025"
+    },
+    {
+        "eventName": "Client Presentation",
+        "startDateTime": "September 30th, 2024 at 14:00",
+        "endDateTime": "September 30th, 2024 at 16:00",
+        "eventType": "Conference",
+        "additionalInformation": "Details about Client Presentation from September 30 to September 30",
+        "timeFrame": "Annually",
+        "endRecurring": "September 30th, 2025"
     }
 ]
